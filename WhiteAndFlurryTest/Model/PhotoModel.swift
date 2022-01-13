@@ -9,17 +9,20 @@ import Foundation
 
 protocol PhotosModelProtocol {
     
-    func photosRetrieved(photos: [Photo])
+    func photosRetrieved()
+    
+    func photoByIdRetrieved(photo: Photo)
 }
 
 class PhotosModel {
     
-    
     // MARK: - Properties and variables
     
-    var delegate: PhotosModelProtocol?
+    static let shared = PhotosModel()
     
-//    var photoArray = [Photo]()
+    var delegate = [PhotosModelProtocol]()
+    
+    var photoArray = [Photo]()
     
     private let key = "md0OYnyRYpRWENPnAu0PiBGwVBUzjGLIx66PrtG1TQ4"
     
@@ -41,13 +44,10 @@ class PhotosModel {
                     
                     let result = try JSONDecoder().decode([Photo].self, from: data!)
                     
-                    print("TOTAL RESULTS: \(result.count)")
-
-//                    self.photoArray.append(contentsOf: result)
-                    
+                    PhotosModel.shared.photoArray = result
                     
                     DispatchQueue.main.async {
-                        self.delegate?.photosRetrieved(photos: result)
+                        PhotosModel.shared.delegate.forEach { $0.photosRetrieved() }
                     }
                 }
                 catch {
@@ -62,7 +62,9 @@ class PhotosModel {
     
     func getPhotos(bySearch: String) {
 
-        let url = URL(string: "https://api.unsplash.com/photos?query=\(bySearch)")
+        let url = URL(string: "https://api.unsplash.com/search/photos?page=1&query=\(bySearch.lowercased())")
+        
+        guard url != nil else { return }
         
         var request = URLRequest(url: url!)
         request.httpMethod = "GET"
@@ -74,14 +76,12 @@ class PhotosModel {
                 
                 do {
                     
-                    let result = try JSONDecoder().decode([Photo].self, from: data!)
+                    let result = try JSONDecoder().decode(Results.self, from: data!)
                     
-                    print("TOTAL RESULTS: \(result.count)")
-
-//                    self.photoArray = result
+                    PhotosModel.shared.photoArray = result.results
                     
                     DispatchQueue.main.async {
-                        self.delegate?.photosRetrieved(photos: result)
+                        PhotosModel.shared.delegate.forEach { $0.photosRetrieved() }
                     }
                 }
                 catch {
@@ -92,5 +92,34 @@ class PhotosModel {
         
         dataTask.resume()
         
+    }
+    
+    func getPhotoDetailed(id: String) {
+        
+        let url = URL(string: "https://api.unsplash.com/photos/\(id)")
+        
+        var request = URLRequest(url: url!)
+        request.httpMethod = "GET"
+        request.setValue("Client-ID \(self.key)", forHTTPHeaderField: "Authorization")
+        
+        let dataTask = URLSession.shared.dataTask(with: request) { data, response, error in
+            
+            if error == nil && data != nil {
+                
+                do {
+                    
+                    let result = try JSONDecoder().decode(Photo.self, from: data!)
+                    
+                    DispatchQueue.main.async {
+                        PhotosModel.shared.delegate.forEach { $0.photoByIdRetrieved(photo: result) }
+                    }
+                }
+                catch {
+                    print("Couldn't recieve single photo data")
+                }
+            }
+        }
+        
+        dataTask.resume()
     }
 }

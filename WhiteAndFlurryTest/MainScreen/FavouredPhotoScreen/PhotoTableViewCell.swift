@@ -13,7 +13,7 @@ class PhotoTableViewCell: UITableViewCell {
     
     static let identifier = "PhotoTableViewCell"
     
-    var photo: Photo?
+    var photo: StarredPhoto?
     
     let photoImage: UIImageView = {
         let result = UIImageView()
@@ -62,56 +62,16 @@ class PhotoTableViewCell: UITableViewCell {
     
     // MARK: - Public Methods
     
-    func setupUI(photo: Photo) {
+    func setupUI(photo: StarredPhoto) {
         
         // Set photo property
         self.photo = photo
         
         // Set authors name
-        self.authorLabel.text = photo.user.name
+        self.authorLabel.text = photo.authorName
         
-        // Check if the image is in cache
-        if let image = ImageCacheService.getImage(url: photo.urls.small) {
-            
-            // Use cached image
-            DispatchQueue.main.async {
-                self.photoImage.image = image
-            }
-            
-            // Skip rest of the code
-            return
-        }
-        
-        // Download the image
-        let url = URL(string: photo.urls.small)
-        
-        guard url != nil else { return }
-        
-        let session = URLSession.shared
-        
-        let dataTask = session.dataTask(with: url!) { data, _, error in
-            if error == nil && data != nil {
-                
-                // Check if we downloaded the right image for current cell
-                if url!.absoluteString != self.photo?.urls.small {
-                    return
-                }
-                
-                // Get the image
-                let image = UIImage(data: data!)
-                
-                // Store the image data in cache
-                ImageCacheService.saveImage(url: url!.absoluteString, image: image)
-                
-                // Set the image view
-                DispatchQueue.main.async {
-
-                    self.photoImage.image = image
-                }
-            }
-        }
-        
-        // Start the data task
-        dataTask.resume()
+        // Set image
+        let image = UIImage(data: photo.imageData ?? Data())
+        self.photoImage.image = image
     }
 }

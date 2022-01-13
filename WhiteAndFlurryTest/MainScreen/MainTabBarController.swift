@@ -11,8 +11,7 @@ class MainTabBarController: UITabBarController {
 
     // MARK: - Properties and variables
     
-    let model = PhotosModel()
-    var photos = [Photo]()
+    let model = PhotosModel.shared
     
     var feedVC: FeedViewController?
     var favouredPhotosVC: FavouredPhotosViewController?
@@ -22,11 +21,10 @@ class MainTabBarController: UITabBarController {
     override func loadView() {
         super.loadView()
 
-        self.model.delegate = self
         self.model.getPhotos()
         
-        self.feedVC = FeedViewController(photos: self.photos)
-        self.favouredPhotosVC = FavouredPhotosViewController(photos: self.photos)
+        self.feedVC = FeedViewController()
+        self.favouredPhotosVC = FavouredPhotosViewController()
 
         self.feedVC!.title = "Feed"
         self.favouredPhotosVC!.title = "Favoured"
@@ -49,15 +47,17 @@ class MainTabBarController: UITabBarController {
 
 extension MainTabBarController: PhotosModelProtocol {
     
-    func photosRetrieved(photos: [Photo]) {
+    func photosRetrieved() {
         
-        self.photos = photos
+//        self.feedVC?.photos = photos
+//        self.feedVC?.collectionView?.reloadData()
+//        
+//        self.favouredPhotosVC?.starredPhotos = photos
+//        self.favouredPhotosVC?.tableView.reloadData()
+    }
+    
+    func photoByIdRetrieved(photo: Photo) {
         
-        self.feedVC?.photos = photos
-        self.feedVC?.collectionView?.reloadData()
-        
-        self.favouredPhotosVC?.starredPhotos = photos
-        self.favouredPhotosVC?.tableView.reloadData()
     }
 }
 

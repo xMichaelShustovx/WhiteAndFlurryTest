@@ -22,6 +22,9 @@
 		52223DC8278ECBAD0054A20E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52223DC7278ECBAD0054A20E /* DetailView.swift */; };
 		52223DCB278EE1B50054A20E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52223DCA278EE1B50054A20E /* DetailViewController.swift */; };
 		52223DCE278F05890054A20E /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52223DCD278F05890054A20E /* PhotoTableViewCell.swift */; };
+		525A617B279044B500A08C2F /* WhiteAndFlurryTestApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 525A6179279044B500A08C2F /* WhiteAndFlurryTestApp.xcdatamodeld */; };
+		525A61B12790671100A08C2F /* StarredPhoto+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A61AF2790671100A08C2F /* StarredPhoto+CoreDataClass.swift */; };
+		525A61B22790671100A08C2F /* StarredPhoto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A61B02790671100A08C2F /* StarredPhoto+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		52223DC7278ECBAD0054A20E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		52223DCA278EE1B50054A20E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		52223DCD278F05890054A20E /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		525A617A279044B500A08C2F /* WhiteAndFlurryTestApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WhiteAndFlurryTestApp.xcdatamodel; sourceTree = "<group>"; };
+		525A61AF2790671100A08C2F /* StarredPhoto+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StarredPhoto+CoreDataClass.swift"; sourceTree = "<group>"; };
+		525A61B02790671100A08C2F /* StarredPhoto+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StarredPhoto+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 				52223DB5278D96440054A20E /* MainScreen */,
 				52223DBA278DABC00054A20E /* Model */,
 				52223DBD278DABF80054A20E /* Services */,
+				525A61782790440B00A08C2F /* DataBase */,
 				52223DAA278D95EA0054A20E /* Assets.xcassets */,
 				52223DAC278D95EA0054A20E /* LaunchScreen.storyboard */,
 				52223DAF278D95EA0054A20E /* Info.plist */,
@@ -102,6 +109,8 @@
 			children = (
 				52223DBE278DB9EE0054A20E /* PhotoModel.swift */,
 				52223DBB278DABD90054A20E /* Results.swift */,
+				525A61AF2790671100A08C2F /* StarredPhoto+CoreDataClass.swift */,
+				525A61B02790671100A08C2F /* StarredPhoto+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -140,6 +149,14 @@
 				52223DCD278F05890054A20E /* PhotoTableViewCell.swift */,
 			);
 			path = FavouredPhotoScreen;
+			sourceTree = "<group>";
+		};
+		525A61782790440B00A08C2F /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				525A6179279044B500A08C2F /* WhiteAndFlurryTestApp.xcdatamodeld */,
+			);
+			path = DataBase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,11 +232,14 @@
 				52223DC5278EB3F90054A20E /* SearchBarView.swift in Sources */,
 				52223DA6278D95E90054A20E /* MainTabBarController.swift in Sources */,
 				52223DC1278E2B880054A20E /* PhotoCollectionViewCell.swift in Sources */,
+				525A617B279044B500A08C2F /* WhiteAndFlurryTestApp.xcdatamodeld in Sources */,
+				525A61B12790671100A08C2F /* StarredPhoto+CoreDataClass.swift in Sources */,
 				52223DCB278EE1B50054A20E /* DetailViewController.swift in Sources */,
 				52223DBC278DABD90054A20E /* Results.swift in Sources */,
 				52223DB9278D9F850054A20E /* FavouredPhotosViewController.swift in Sources */,
 				52223DC8278ECBAD0054A20E /* DetailView.swift in Sources */,
 				52223DA2278D95E90054A20E /* AppDelegate.swift in Sources */,
+				525A61B22790671100A08C2F /* StarredPhoto+CoreDataProperties.swift in Sources */,
 				52223DBF278DB9EE0054A20E /* PhotoModel.swift in Sources */,
 				52223DB7278D9EEE0054A20E /* FeedViewController.swift in Sources */,
 				52223DCE278F05890054A20E /* PhotoTableViewCell.swift in Sources */,
@@ -434,6 +454,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		525A6179279044B500A08C2F /* WhiteAndFlurryTestApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				525A617A279044B500A08C2F /* WhiteAndFlurryTestApp.xcdatamodel */,
+			);
+			currentVersion = 525A617A279044B500A08C2F /* WhiteAndFlurryTestApp.xcdatamodel */;
+			path = WhiteAndFlurryTestApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 52223D96278D95E90054A20E /* Project object */;
 }

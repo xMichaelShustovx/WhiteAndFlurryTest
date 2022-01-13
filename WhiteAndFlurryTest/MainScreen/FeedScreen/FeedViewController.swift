@@ -12,14 +12,14 @@ class FeedViewController: UIViewController {
     // MARK: - Properties and variables
     
     var collectionView: UICollectionView?
-    var photos: [Photo]
+    var photos = [Photo]()
     var searchBar = SearchBarView()
 
     // MARK: - Initialization
     
-    init(photos: [Photo]) {
-        self.photos = photos
+    init() {
         super.init(nibName: nil, bundle: nil)
+        PhotosModel.shared.delegate.append(self)
     }
     
     required init?(coder: NSCoder) {
@@ -75,4 +75,22 @@ extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelega
         present(DetailViewController(photo: self.photos[indexPath.row]), animated: true, completion: nil)
     }
     
+}
+
+// MARK: PhotoModel Delegate Methods
+
+extension FeedViewController: PhotosModelProtocol {
+    
+    func photosRetrieved() {
+        
+        self.photos = PhotosModel.shared.photoArray
+        
+        DispatchQueue.main.async {
+            self.collectionView?.reloadData()
+        }
+    }
+    
+    func photoByIdRetrieved(photo: Photo) {
+        
+    }
 }

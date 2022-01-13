@@ -59,6 +59,7 @@ class DetailView: UIView {
         result.setImage(UIImage(systemName: "star"), for: .normal)
         result.tintColor = .red
         result.backgroundColor = .clear
+        result.isUserInteractionEnabled = false
         result.translatesAutoresizingMaskIntoConstraints = false
         return result
     }()

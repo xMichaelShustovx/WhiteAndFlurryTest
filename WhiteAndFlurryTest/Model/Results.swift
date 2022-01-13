@@ -19,7 +19,7 @@ struct Photo: Decodable {
     var urls: URLs
     var location: Location?
     var downloads: Int?
-    var isStarred: Bool?
+    var imageData: Data?
 }
 
 struct User: Decodable {
