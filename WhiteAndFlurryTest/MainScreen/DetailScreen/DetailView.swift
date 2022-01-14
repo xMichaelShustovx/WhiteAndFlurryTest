@@ -64,6 +64,17 @@ class DetailView: UIView {
         return result
     }()
     
+    let cropButton: UIButton = {
+        let result = UIButton()
+        result.setImage(UIImage(systemName: "crop"), for: .normal)
+        result.tintColor = .white
+        result.backgroundColor = .blue
+        result.layer.cornerRadius = 25
+        result.clipsToBounds = true
+        result.translatesAutoresizingMaskIntoConstraints = false
+        return result
+    }()
+    
     // MARK: - Initialization
     init() {
         super.init(frame: CGRect())
@@ -85,7 +96,7 @@ class DetailView: UIView {
     
     private func setConstraints() {
         
-        [photoImage, nameLabel, dateLabel, locationLabel, downloadsLabel, starButton].forEach{ self.addSubview($0) }
+        [photoImage, nameLabel, dateLabel, locationLabel, downloadsLabel, starButton, cropButton].forEach{ self.addSubview($0) }
         
         NSLayoutConstraint.activate([
             photoImage.widthAnchor.constraint(equalTo: self.widthAnchor),
@@ -116,7 +127,12 @@ class DetailView: UIView {
             starButton.widthAnchor.constraint(equalToConstant: 50),
             starButton.heightAnchor.constraint(equalToConstant: 50),
             starButton.centerYAnchor.constraint(equalTo: self.nameLabel.centerYAnchor),
-            starButton.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20)
+            starButton.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20),
+            
+            cropButton.widthAnchor.constraint(equalToConstant: 50),
+            cropButton.heightAnchor.constraint(equalToConstant: 50),
+            cropButton.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20),
+            cropButton.centerYAnchor.constraint(equalTo: self.downloadsLabel.centerYAnchor)
         ])
     }
 }

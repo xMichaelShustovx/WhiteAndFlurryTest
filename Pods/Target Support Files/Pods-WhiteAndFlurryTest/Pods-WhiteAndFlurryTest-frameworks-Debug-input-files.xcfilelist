@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-WhiteAndFlurryTest/Pods-WhiteAndFlurryTest-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Brightroom/Brightroom.framework
+${BUILT_PRODUCTS_DIR}/TransitionPatch/TransitionPatch.framework
+${BUILT_PRODUCTS_DIR}/Verge/Verge.framework

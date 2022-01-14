@@ -1,0 +1,3 @@
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Brightroom.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionPatch.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Verge.framework

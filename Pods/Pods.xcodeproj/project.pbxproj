@@ -1,0 +1,1842 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		014F7B5BE06276C0B61F80E2F9A52E09 /* ClassicImageEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC73B62B0A6B834355CE2AA2213F7D2 /* ClassicImageEditViewController.swift */; };
+		017F8996A1B394A671EF385F495F85EB /* VergeConcurrency+AtomicReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55EBCE785960018081BB989045A3DA1 /* VergeConcurrency+AtomicReference.swift */; };
+		01C66D7903B14FD7AA7D18C40ACCFF47 /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F836B0C832F9DA32A06741FA0F6E76F /* ImageProvider.swift */; };
+		02735765292EEF7C7377C116CBC4BD1A /* ClassicImageEditMaskControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212368A538FDC260B95358C0D7EEFE81 /* ClassicImageEditMaskControlView.swift */; };
+		029F69F97639F567E8D55EFEE4DE5304 /* CropView._CropScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9E58927F4D485C5BC6A5978DA73CBA /* CropView._CropScrollView.swift */; };
+		030496AB009ED574774E5341A4B38853 /* SwiftUICropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211B1B35FE0E46F43384204B4A3DF06A /* SwiftUICropView.swift */; };
+		04141D3C20EA5F75EBD9E01ED72A5C92 /* Brightroom-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05729767CDF86FD73BB5FD0B121124B7 /* Brightroom-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0470A0501C6E4B8E121F0DE55C25E4C5 /* ClassicImageEditShadowsControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C43E52F514E5EDFF46243CA1391FFD /* ClassicImageEditShadowsControl.swift */; };
+		08DA4FA062DE3B09307CBDD498FF2A93 /* VergeConcurrency+AtomicInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDB3A4FC85747352DE0B7FD6469E94D /* VergeConcurrency+AtomicInt.swift */; };
+		0AAD9B2EE709D6D814528F796819E221 /* ClassicImageEditFadeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39408684FF1E963B1293192CF60C60C /* ClassicImageEditFadeControl.swift */; };
+		0B298E1D938888FAD87E9CE2201671D4 /* ClassicImageEditOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27575A9C76FF5ACA88E660BA63A00901 /* ClassicImageEditOptions.swift */; };
+		0F045D5F34118ACCAFABBEE9B25BDA5C /* AtomicBridges.h in Headers */ = {isa = PBXBuildFile; fileRef = 1115C6239A61FD9F1606F61A310E9379 /* AtomicBridges.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FFBC0FC9036E4F624AC0C6047DF6BCF /* _COWFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC0586FC668F2D2D66338A6C94DBE5C /* _COWFragment.swift */; };
+		13293E43F2948F454BD902A8D982A7EC /* ImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3EB9FBCB8022CD242BA0DEB8C4EEA6 /* ImageSource.swift */; };
+		13766F5570424205C0E1E952F2D10F95 /* _VergeObservableObjectBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E20E34DC3F94DB73433FF7BE1B81A6A /* _VergeObservableObjectBase.swift */; };
+		138D0FA431ADB58F41D491B03BA66E13 /* ClassicImageEditRootControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E6109B2650BBDC41D8B336DB68EF15 /* ClassicImageEditRootControlView.swift */; };
+		13C0FEA59795CDB696F998F2D3728C66 /* EngineSanitizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C58741965F58D9771ADB0F9B68D8C6C /* EngineSanitizer.swift */; };
+		14AC9AD3A639494AA08EF6AA775EBE99 /* LoadingBlurryOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22238EB77029A097EC5A818B262838E1 /* LoadingBlurryOverlayView.swift */; };
+		17AC28E4AC8BE883592A59D3C7DC8E57 /* EngineLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722C190D0F505B8D02D5C963DFE969E3 /* EngineLog.swift */; };
+		186DC076F272642092EF42CAD3895B5A /* AtomicBridges.m in Sources */ = {isa = PBXBuildFile; fileRef = 714AF3C473AF51482A04A4246CB6922E /* AtomicBridges.m */; };
+		191ED30DE014F026B4B854E490691D57 /* ClassicImageEditTemperatureControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6ABF9CEF18E7768EB279D6780CB6E /* ClassicImageEditTemperatureControl.swift */; };
+		198E34E16F48C0BEEC8D50ECA5ACF99B /* Changes+Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9205E1BEA14812783E6572634E16E405 /* Changes+Deprecated.swift */; };
+		1A9BFC468EF8CF90202F8A1C7FC9857D /* ColorCubeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8006B489230AEC5E7D5C1E286A7568 /* ColorCubeLoader.swift */; };
+		1D71F470DF0FC74C34F96BF381D17067 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E977EDC1B0772D75B3A4957ADF5B95F /* Foundation.framework */; };
+		1E266CE08893C2EFA0073F3EDF49DDD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E977EDC1B0772D75B3A4957ADF5B95F /* Foundation.framework */; };
+		1F0AA44660F790189610C5AC3BC907D1 /* Verge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42248DA87324D92E11BC17DE508BD99C /* Verge.framework */; };
+		23DF38B58ED1B68E562DE37F40522FFF /* ViewModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF270DDEA39ACF5560B60BB7F1AAB0 /* ViewModelBase.swift */; };
+		28498E8F776D08138C3518464CBB9329 /* AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88593FFFEF43B5965BA1E412C16EC50 /* AutoLayout.swift */; };
+		29D923BEF80FD2744A054E0636952B90 /* BrightroomUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929A54E602752B83FD88A6D0A89989BC /* BrightroomUI.swift */; };
+		2A5243FE2587210CD456F68484C89DD6 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12CCB6A0670C1FAB133B5D96470C2CF /* Media.xcassets */; };
+		2C3EF415689E2DA45B92DB85EFD63E09 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B2925086B11B3FF247B65B8E2C4C20 /* CoreImage.framework */; };
+		2C8137E13A826D529A24EF97BA26EA6D /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA088AC8FDAE6D2314A211C0E205DD39 /* CanvasView.swift */; };
+		2CA93A799483FFD1F9D73C47797878EB /* Derived.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC7BEF88A26BE51E11DC5485C08F015 /* Derived.swift */; };
+		2D48D3AA3334D58D56D0A1CCB3C48B27 /* ParameterRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD95C41D68A8515C7490CAEBF19D1D9 /* ParameterRange.swift */; };
+		303F5C66814D96C519F7EBDE155CCA63 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA419464247B0C8CEA1589E1C1BADA5 /* Geometry.swift */; };
+		316C3DD6744A638283A433FD6DD59106 /* ColorCubeStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7340411B4886753DC87FA1EE0A5E03D /* ColorCubeStorage.swift */; };
+		33F302E767987165B3618F42C7140B83 /* EditingStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55637E663CD3B2A49046E156F36CB18C /* EditingStack.swift */; };
+		3407EC27531932EAA208769491CE1017 /* PhotosCropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC9DE433B4D926237E2992D8152B178 /* PhotosCropViewController.swift */; };
+		34C42876841A991EC2D25E7AFC404167 /* ClassicImageEditExposureControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C225E8A9AB71280DA6BD541632EC2886 /* ClassicImageEditExposureControl.swift */; };
+		363F1C678747B8E88B9DFA73F28B682A /* GraphicDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0BFC29C39A0F361571F09D75B10CC3 /* GraphicDrawing.swift */; };
+		37098D06086B45276C00CB79EB717975 /* NonAtomicVersionCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2F50C138C0F6C382736502DBD40A1 /* NonAtomicVersionCounter.swift */; };
+		3934647B08762DF05A14AA44176948C7 /* BrightroomUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EE01016072E90F87F4FB34D7664034F8 /* BrightroomUI.bundle */; };
+		39FB84BB031D931855CBC6EAD89715A4 /* FilterSharpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF14F62B85F8D851535BAAE77CB93E8 /* FilterSharpen.swift */; };
+		3EE23D328B3291935E16AE9379158225 /* VergeObjcBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = E107C057BE7EB16B5C4633C11AE3E335 /* VergeObjcBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		401D8C9B7D054D93FF118BB6123DD9FD /* Comparer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D37C4B2D3FDF23219AB13C8E1CBF6BE /* Comparer.swift */; };
+		43B5C5067F06EBAB2CBE02AC6881C1CC /* StoreType+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D08BD1EA7F2E0516C06009A58D595F7 /* StoreType+SwiftUI.swift */; };
+		43B7A09E3590AE90E0C616D97DDDBAE3 /* CachedMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97894C80A544088B5D272009FFBAF5B /* CachedMap.swift */; };
+		44EB110830E45C83FD4158E58F9441B9 /* ClassicImageEditPresetListControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C533FABD6706C80BF1444BE69E894C /* ClassicImageEditPresetListControl.swift */; };
+		4A02072DF033375476976A407CF72685 /* DrawnPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25642B84C6772E64CB6C3BE4195B6E /* DrawnPath.swift */; };
+		4B9109E2C4617ED1671B4DF4C9A3FE68 /* DetachedDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B475D5B642C5D2DCD8A4389BE86BE635 /* DetachedDispatcher.swift */; };
+		4C9C8819D41BA7FEDD5252CDEA047AC1 /* DispatcherBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA79E58F53A00001591D41F9D0628160 /* DispatcherBase.swift */; };
+		4D881155F9B6B0D07C9D61740421D928 /* Store+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824C8295FDD28725348EB137BE1D939F /* Store+Combine.swift */; };
+		50C05277B2FA5A03DB46B118CF5F306D /* Filtering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2801CECB63A2891FE415772E1B107D6E /* Filtering.swift */; };
+		5140D628E883DFC22609DD63D4CB9C4B /* CoreGraphics+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127CA7C532DDAD3EF0195C84D4D2B1F2 /* CoreGraphics+.swift */; };
+		52F492A07B151166DE36BA29C938B7F8 /* FilterExposure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBCDEFBBC61DE95F5BF583E2C97EE07 /* FilterExposure.swift */; };
+		54905B95C5D9897A576A6843A10DF654 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = B004AD1F874429238763A3A69A53ECBD /* Log.swift */; };
+		5855A622A30BAC739A6ACC5907C5BF8E /* StoreLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875347325B8062939B82B6DA4A7F6396 /* StoreLogger.swift */; };
+		5B3044CD3FF2BE0EA5A93D3EED12A912 /* Pods-WhiteAndFlurryTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F66EBB0BDB56A81758D80F55D181E888 /* Pods-WhiteAndFlurryTest-dummy.m */; };
+		5D5F0BB6F694BB272F1125928A96EE0B /* ClassicImageEditSaturationControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2C26145A02D240E29A868EDE9A6961 /* ClassicImageEditSaturationControl.swift */; };
+		5EE8B77672597DB584349CC505B3585C /* ClassicImageEditFilterControlBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B28FEFADEAC6547CD426F7261C5E28 /* ClassicImageEditFilterControlBase.swift */; };
+		5F0465B7642EF76366721439070A4400 /* BackgroundDeallocationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B9ADFDA577CBA8468698AAFEE35052 /* BackgroundDeallocationQueue.swift */; };
+		6145AA2EF3E5C178CCF4D865C515F124 /* CIImageDisplaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007AD371DE59306C8843F64AFE920E93 /* CIImageDisplaying.swift */; };
+		626B8D6524D2BB8496452CD6957A1256 /* ClassicImageEditControlViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA373A8879790E0E655DB4E1B71BA50 /* ClassicImageEditControlViewBase.swift */; };
+		64C6B23DBF100FE5D6E279E179EF790E /* ClassicImageEditNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C518268731A4C1344FB7F703FF35499 /* ClassicImageEditNavigationView.swift */; };
+		6A2F507C2894184294CDD17FB66C4D68 /* Verge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 751F874A68CF7AD72934792D7831B149 /* Verge-dummy.m */; };
+		6BA43B17F3B39A47A312BADFB3A0CACB /* ImageTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B09CB9E8E8382EDA12FAA725887AD1 /* ImageTool.swift */; };
+		6D26ED4EBD44498980A9D831E59DA7F3 /* ClassicImageEditClarityControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95617CAF8C0F8F1D6D40D48B16DFEEFD /* ClassicImageEditClarityControl.swift */; };
+		6F35D148B26D619A33077F8639984D24 /* FilterGaussianBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD14A4C7001C29788FAAD7CA0C2E731 /* FilterGaussianBlur.swift */; };
+		716B0110119DFB488A33DA88ACC5D318 /* ClassicImageEditStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0B86DD9997BA116C01375023745FB7 /* ClassicImageEditStyle.swift */; };
+		72A875F29335CA12FD5730905B49DEF2 /* Changes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCF280D9DB2A43D9BCCC3C6248FF2CE /* Changes.swift */; };
+		73268ADF71AB24BFA5CD4F9707717B4C /* Verge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5270EB5610791D9BDFC9384A2C23A0B5 /* Verge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7343F284288545B185703267AC347A9F /* CropView.CropInsideOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDF187E380078CE826C8A157A350301 /* CropView.CropInsideOverlay.swift */; };
+		76331F8AA451D50ABD6219C59818B5A1 /* CropView._InteractiveCropGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901380C964BF8177000952DFB2190E2A /* CropView._InteractiveCropGuideView.swift */; };
+		773883423CD24FDFFF7BED2B814C587F /* EditorLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD113572FD647233E8CA7D80A6E718 /* EditorLog.swift */; };
+		7851878B1EA7EF88827D5FC0A8364996 /* EditingStack.CropModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9AA7F9C0F6D2A86163CFD20B621E80 /* EditingStack.CropModifier.swift */; };
+		7962AF63898FE3F0DFBCBC0D7F0B26E6 /* InternalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D20ED08F748764594F8343F12A0223B /* InternalUtils.swift */; };
+		7A43DFC83DB600DE54479DAF42E94B6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2A59F5CF89C1D4DA09654FD7A1EAC11 /* UIKit.framework */; };
+		7AE9E5CE993A16D6BEFABD4A1FAC78A4 /* EditingStack.Edit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989F0AC20EFE530388942E8A921132AA /* EditingStack.Edit.swift */; };
+		7C4CA5D0CF35E676FC0C8B3F6B9CE7FA /* _BrightroomDebounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B61A248FA709D30EEBEF3E79817078 /* _BrightroomDebounce.swift */; };
+		7F430539F0D3618EFAE4EA734A7FA562 /* VergeConcurrency+SynchronizationTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B603510D02CFD27F63AA155A34C39E0C /* VergeConcurrency+SynchronizationTracker.swift */; };
+		7FE3C8D6F4D34A8D93F1FCC981FF7A59 /* VergeAnyCancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A558C98D2B96C04ED50C6C9E97B81502 /* VergeAnyCancellable.swift */; };
+		8283E41354ABA13EA6CE5862F40609F3 /* ImageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A02F86C49207E7BB3E2D039A86B75E /* ImageRenderer.swift */; };
+		83DAD5B5625289C03220E7D62A25B926 /* FilterBrightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B907ECB37C739F0019C7B9F18FBF1F0 /* FilterBrightness.swift */; };
+		843F2D536BC3C391FE15E4370760A985 /* SwiftUIPhotosCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97317BDD24367013CA256E6215E6690 /* SwiftUIPhotosCropView.swift */; };
+		84744F25E9AD038400D299D05BAD5666 /* FilterContrast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9706BD33B0EF9616F7BD12BFACE4547E /* FilterContrast.swift */; };
+		855140D4DA391FA6F5DAFC8396B59A90 /* ClassicImageEditCropControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578D2523458D79C9241BF96460F703D5 /* ClassicImageEditCropControl.swift */; };
+		86BC45F3C914B8749BD1F3538C493F2A /* ClassicImageEditControlStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF65D2508DE9EC98E38E8D0BDFEDA79 /* ClassicImageEditControlStackView.swift */; };
+		86C70E1B6DD1F5E18BE1D695DA0E2E10 /* FilterFade.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA812DA3F574BA6D237C6300ACB6B18 /* FilterFade.swift */; };
+		88BC4251ACAFB2E63FB0A126D50A13C2 /* EditingCrop+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C187E93C144E6686684C663D74D8571E /* EditingCrop+.swift */; };
+		88D7287A7FB9B0189C6DD438B17DF9DD /* StoreWrapperType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFEB70CE5ADFD1055618DDC04063A7F /* StoreWrapperType.swift */; };
+		88DD2D1AB2E2C3A33249255D8FD7C371 /* Wrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8700FE8D98FE12281359832D3E25805B /* Wrap.swift */; };
+		8A2AD0AE08207100DE9E6FE9CA08D2F8 /* FilterSaturation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D3B7E1BFD2C8246320F2CFB5DBBD4A /* FilterSaturation.swift */; };
+		8A97B28FE7163447ED78C2E1D827C33F /* Derived+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E30CC97AA3F6E0B329806E589866E51 /* Derived+Combine.swift */; };
+		8CE493316162D7C4593DAB6B5279B339 /* Scan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365F0E65915A924F761A58E451D88F28 /* Scan.swift */; };
+		8D815E5DD376B5D71686B1803E7887E1 /* _ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1AF18FEA2AC7BAEB9F015F17276858 /* _ImageView.swift */; };
+		90DABC9BD5DA584C9C98F3D049617456 /* TransitionPatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560A7DFEECDDE95D7C3EBB1920A257E6 /* TransitionPatch.framework */; };
+		916BDE8A2487226E12C92192BCD7AAB8 /* ColorCubeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A9D447094DFA8C089FC94653B47A4E /* ColorCubeHelper.swift */; };
+		920876FEC5E79E1A10B2BAA43D470ADF /* EditingCrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF396051DFB2B44D450EC1A1E7309A /* EditingCrop.swift */; };
+		9643BFD04B62DBFEDF5B0DE5C5A377B9 /* ImagePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6A113E7DE7EAA6BA88F8FA08E16AF8 /* ImagePreviewView.swift */; };
+		966F454CF7F7968E940AA5FFACD559BF /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = A059B6E8838D6635FF01126E92AD53CD /* Source.swift */; };
+		97167041C0195F05946AB5212E8D833F /* MetalImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB1FD5908860AD676E01F8E36F6774 /* MetalImageView.swift */; };
+		981FDFCF40EE20F606E073CF0FE63D23 /* FilterTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47929DEB45A23CC221863F97D845A36 /* FilterTemperature.swift */; };
+		987DFAF2A71FAE5D6FDC6CDFCE980D46 /* BatchCommit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB9EFF071B42C00A08661F96FAEDF7 /* BatchCommit.swift */; };
+		9919218026CA84ECEFCA7BF0AC39711C /* StoreMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D426CD40BF432F47B78B7E42A2FC8A31 /* StoreMiddleware.swift */; };
+		9B79E6A19E9DD277C7E0D18E847A38F6 /* Brightroom-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11428ED1BA68A5353060342A9295C8E5 /* Brightroom-dummy.m */; };
+		9D905233A14223B2F0A20DADC41700C0 /* StateReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754D5B3068AA20E20D17110792EF4A00 /* StateReader.swift */; };
+		A163B3649C8B9D98EDCB5EE209B17DDE /* MutationTrace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED18D9A2C3435AD79720AB85A6BF179 /* MutationTrace.swift */; };
+		A17F409DA3D5B4E73EFD144D27DBCBBD /* PhotosCropAspectRatioControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7304D1F9B38BDE14B11E28DDC18F15C7 /* PhotosCropAspectRatioControl.swift */; };
+		A1B94E79AEABFD18309D7ECB9B32E841 /* PixelEditorCodeBasedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E47E2A01481B1BDA13F715F8DCAB102 /* PixelEditorCodeBasedView.swift */; };
+		A236E6DEA85135CD600D503FDB411430 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E04073C01C2B8E544CD7EB1BFFC579 /* Edge.swift */; };
+		A45FEA2CAA7A8746E217D050E1DB77CF /* UIButton+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7096AA9BE6EC1C4794090A4DAC8BD85 /* UIButton+Closure.swift */; };
+		A4D467684DFC1074821A22BC3C5E3C75 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A37AF26D4DD27C03109CEEDFE6B5DAA /* Store.swift */; };
+		A51653B9467B7BACC3B4A0633CA89C65 /* StoreType+Derived.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A6B42B1032DAEB52776ACF77223848 /* StoreType+Derived.swift */; };
+		A521E7FE52403E86C25E0071C8B001BD /* ClassicImageEditEditMenuControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C7C04E9BCBB7D45E4E2630414912B5 /* ClassicImageEditEditMenuControlView.swift */; };
+		A66F9D3C2FEA388DA8E2DAB10907BF08 /* TempCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA779C186D2E8D78779FC62E64EDAB8B /* TempCode.swift */; };
+		ACDDE2C1AA636605EFADDF00D4B10A67 /* StateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9E9E2B97A02A856B4592414DEDB05B /* StateType.swift */; };
+		AE0885230267B10E3BE84A457F10A75D /* UIStateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C593D97EBB3257AA8673FD56FDEF75D /* UIStateStore.swift */; };
+		AE6C431CA0E86D782D25D5827FF262F5 /* ActivityTrace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C9067A7C0A9E8CEE676B1BE1902C5E /* ActivityTrace.swift */; };
+		B2743B2216F05627DAB016C81034E32C /* StoreType+Assignee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A27FC719B641F026BB538AF6A6B28F /* StoreType+Assignee.swift */; };
+		B2763CCB18A3D2F48F48CB33E2FB4036 /* TargetQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A91532520083CB7A13DA63610B6B79 /* TargetQueue.swift */; };
+		B2D08BCBDB05DC9A6214FF45B8DB2058 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12CCB6A0670C1FAB133B5D96470C2CF /* Media.xcassets */; };
+		B3B2BD7B6010EC5947D203900A4BE0F7 /* ClassicImageEditGaussianBlurControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0B93D7FE566F4CB3267F19C6F91B9A /* ClassicImageEditGaussianBlurControl.swift */; };
+		B5AEED126BDE87C6C71916653EC3E999 /* Pods-WhiteAndFlurryTest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC5CE289FE193FB8FFA54E92875067E5 /* Pods-WhiteAndFlurryTest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9AA96999669FB78E3857FC05556CB63 /* Optional+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC67658793F59418174D3CA49E40D15 /* Optional+.swift */; };
+		B9BCF65C132EB845E8139A1E11C5B094 /* FilterVignette.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2D8D4A479A9C345A796DFC96D6799 /* FilterVignette.swift */; };
+		BB0F85713386D12A2974EB0C12A63B96 /* CoreImageInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3E7198B082612451E60C8997626CE7 /* CoreImageInspector.swift */; };
+		BCA1A7E4630778C82DE2DAAE80B50AF6 /* CIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DEDF97523F938C04F3DEDEDC281AEF /* CIImage+.swift */; };
+		BDAA824EBA58B3E8E43798BE467A2D91 /* TransitionPatch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4384C8BF64BF5D6EDAC1EAC9DD0A7E92 /* TransitionPatch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF0A03FD5791F9946E3A73616E081CAD /* ClassicImageEditStepSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7AD67D6A1C0DC8695BACE8DF060C9F /* ClassicImageEditStepSlider.swift */; };
+		C1ABD95102B00B1983933B84898977A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E977EDC1B0772D75B3A4957ADF5B95F /* Foundation.framework */; };
+		C3D34BCAF79FD7DDF13DAA2E60D7E5E4 /* Indexed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47F5A65FBEEDEE1E5A792C2D1E906AE /* Indexed.swift */; };
+		C5172E7480E626AA2391E07918ACC4E5 /* FilterHighlightShadowTint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997C797D0499E88839D7DA03379705FC /* FilterHighlightShadowTint.swift */; };
+		C77542A49797A2CF240F9965A1357EB9 /* Pipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC72A25C56406F17881B6E9E6564074 /* Pipeline.swift */; };
+		C7A694DFF0D6DC463C0AC5899AE4DF56 /* UIStateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE4113BCC2FB557931476C7FFFFD8E /* UIStateStore.swift */; };
+		C844F873D2F93DF001E19EE07AEF32C0 /* FilterHighlights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A35D292500196839BE5E80C5EBEE7C /* FilterHighlights.swift */; };
+		CACB8A9617664E4D347FC505902BDF1C /* DispatcherType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F4F232572187EEF9CFFDFDDD498CB6 /* DispatcherType.swift */; };
+		CD2AA5A1F5A48ACC19E4F55698CFC3F2 /* OvalBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1F36F20E1160D909BA0EF7810AA6C1 /* OvalBrush.swift */; };
+		CD665EB6A86951283BCF1FCFF757BE1F /* FilterUnsharpMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8288D9ABC4DEEFF9A4D292407A0BCE8C /* FilterUnsharpMask.swift */; };
+		D09AB024D8FE9B012D23749E046AFE8F /* DefaultStoreLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E1592A15C57E65D6C9848376575674 /* DefaultStoreLogger.swift */; };
+		D168372BF30BA69AAC59B8CDA2740670 /* ClassicImageEditHighlightsControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F402587CFA3E27D3796B3F1E07EE7014 /* ClassicImageEditHighlightsControl.swift */; };
+		D17E83DA24EEAE135E0B231738C81746 /* InoutRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B879AAE81AA3F954EB16568F97C35A /* InoutRef.swift */; };
+		D265880320A67617432A59777F47BCFB /* VergeConcurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA54DD529B4A22BBF2A6CFD0316F3933 /* VergeConcurrency.swift */; };
+		DAC5E1951579315C6FFCDBBC3A598259 /* _StateTypeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8539A3779A1E3619A20C4AB87F96D6A2 /* _StateTypeContainer.swift */; };
+		DBBA0E26473CFC1AD0B8B12975A02C88 /* ClassicImageEditContrastControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA90E6ED459133D03004FE686EA015 /* ClassicImageEditContrastControl.swift */; };
+		DE647604974BF044F18B3B596DBC45DA /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C989B957A67FD557853553BC606F00 /* Orientation.swift */; };
+		DF3B88F9C8616CA14F7D0D78E586DE3E /* RuntimeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6248264513D434ACD64051FFD0BED895 /* RuntimeError.swift */; };
+		E123A31019AD2DE81D8DE74F8C7F0477 /* ClassicImageEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BECF510F1E4E3B7E04AA217DD7DB4CC /* ClassicImageEditViewModel.swift */; };
+		E239BE57A9843439AFE33AA18829A051 /* CropView.CropOutsideOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF965946711C93148DD65B571CC15FF /* CropView.CropOutsideOverlay.swift */; };
+		E5203146DE11391BED8FFB15ACA667F8 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4D38D3E2F416EC6D078FC5D4E8797A /* Storage.swift */; };
+		E693AE71DB263D83644DBB5E256A68F8 /* BrightroomEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853ECCD037F38F91CF868221B88240E7 /* BrightroomEngine.swift */; };
+		EA57DFE6628B1BD7D6BD0F07F5C3B2A5 /* TransitionPatch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D15EAB4F88676250498D9BDEE2AA10E /* TransitionPatch-dummy.m */; };
+		EB01C7EEE905318BA060D54C8EA39B44 /* ClassicImageEditVignetteControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51B074850E2F1E8ECB23767706CA7ED /* ClassicImageEditVignetteControl.swift */; };
+		EBAA442EB32BC3BA7486848E1A68A7A8 /* FilterPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9DCE589AAD19A32DD664703263817A /* FilterPreset.swift */; };
+		EF6BD013740DD2E0FC83909A997A25C5 /* SmoothPathDrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F969900E13D4D4A898F73E1468A96 /* SmoothPathDrawingView.swift */; };
+		F2CF6389402E8712276B3B85E8E2B077 /* ClassicImageEditSharpenControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FA8B8B216DDC52A2B6AD07B598F92 /* ClassicImageEditSharpenControl.swift */; };
+		F581F3511A274FB6B3ECC972C2BD3F85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E977EDC1B0772D75B3A4957ADF5B95F /* Foundation.framework */; };
+		F657EDCB373D4DC2F0EA87644DCFC5DA /* Signpost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7264AF6972D6B11A5DA651BB79948F /* Signpost.swift */; };
+		F735F5BE6CC7A28C58E477B13CDD0B5E /* Derived+Assign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9CA89C0BAD9AAF1E13695717D4AFA5 /* Derived+Assign.swift */; };
+		F7E79B0D8006886634235E73B2FB4124 /* FilterShadows.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16E5E63A56205A3821111495EF6FD28 /* FilterShadows.swift */; };
+		F7F78508E0839E529F4D479A2D402178 /* BlurredMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0BB9A4510D44A97FA548BC8EF282BB /* BlurredMask.swift */; };
+		F81CCED5E31A1E0E8FADF7115B94BB8E /* CropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F12D726F249B150FA64C4A65173EAB6 /* CropView.swift */; };
+		F9DD6C06960E8BD29F3B8B0B488486D5 /* FilterColorCube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E73B3AB3FA204E39330842DE762F20 /* FilterColorCube.swift */; };
+		FB689A9E4DA44E4AE50562FABB849807 /* EventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFDE0C05002BA88B5DA106E65F6E849 /* EventEmitter.swift */; };
+		FBC5292CF4F77DE9E2B01C7B44D57B86 /* BlurryMaskingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4734FC893292CF991240E411D1BF8C88 /* BlurryMaskingView.swift */; };
+		FBD3A8C3D4664BE7790DA830843E986B /* ClassicImageEditDoodleControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89091DD2139D77FFF0F0BE9F53C4ACA1 /* ClassicImageEditDoodleControlView.swift */; };
+		FE2FCD4372C7D66E177442A3308233FF /* RuntimeSanitizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8223CE61EFCD79373A704BAEECC453A /* RuntimeSanitizer.swift */; };
+		FEACB6A7DBD9A1F3BFA98FB784992054 /* StoreType+BindingDerived.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9720E36A7D0057CEB0A2806ED1AE814A /* StoreType+BindingDerived.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16AA30F45F47D98FDF4ABF68A608FC0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 498C215DC480DFEE11123A6C3D30E884;
+			remoteInfo = "Brightroom-BrightroomUI";
+		};
+		173AF43D902739A17A008BE00CEFD70B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A9A58D570F0F84EC44791799CC961D2;
+			remoteInfo = TransitionPatch;
+		};
+		346174C5F03C8195919536C09572B8C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 498C215DC480DFEE11123A6C3D30E884;
+			remoteInfo = "Brightroom-BrightroomUI";
+		};
+		51ED898AB3E1813E951CF3D64EC81FF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74B462085E35CA2929210D22C2FADEE7;
+			remoteInfo = Verge;
+		};
+		66B56B2FDE38E91CE0631F44F8A9636F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74B462085E35CA2929210D22C2FADEE7;
+			remoteInfo = Verge;
+		};
+		68ED26A26F58D05BCEF0A9251DF1B01B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A9A58D570F0F84EC44791799CC961D2;
+			remoteInfo = TransitionPatch;
+		};
+		6C37B396168E562E1B3E83926FE5426C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12F20EF6987B1381C5A860555633C350;
+			remoteInfo = Brightroom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		007AD371DE59306C8843F64AFE920E93 /* CIImageDisplaying.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CIImageDisplaying.swift; path = Sources/BrightroomUI/Shared/Components/ImageViews/CIImageDisplaying.swift; sourceTree = "<group>"; };
+		00B879AAE81AA3F954EB16568F97C35A /* InoutRef.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InoutRef.swift; path = Sources/Verge/Library/InoutRef.swift; sourceTree = "<group>"; };
+		00C989B957A67FD557853553BC606F00 /* Orientation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Orientation.swift; path = Sources/BrightroomEngine/Library/Orientation.swift; sourceTree = "<group>"; };
+		01C533FABD6706C80BF1444BE69E894C /* ClassicImageEditPresetListControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditPresetListControl.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/Components/ClassicImageEditPresetListControl.swift"; sourceTree = "<group>"; };
+		01C7C04E9BCBB7D45E4E2630414912B5 /* ClassicImageEditEditMenuControlView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditEditMenuControlView.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/Components/ClassicImageEditEditMenuControlView.swift"; sourceTree = "<group>"; };
+		05729767CDF86FD73BB5FD0B121124B7 /* Brightroom-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Brightroom-umbrella.h"; sourceTree = "<group>"; };
+		08C9067A7C0A9E8CEE676B1BE1902C5E /* ActivityTrace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActivityTrace.swift; path = Sources/Verge/Logging/ActivityTrace.swift; sourceTree = "<group>"; };
+		0C58741965F58D9771ADB0F9B68D8C6C /* EngineSanitizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EngineSanitizer.swift; path = Sources/BrightroomEngine/Library/EngineSanitizer.swift; sourceTree = "<group>"; };
+		0D15EAB4F88676250498D9BDEE2AA10E /* TransitionPatch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TransitionPatch-dummy.m"; sourceTree = "<group>"; };
+		0D20ED08F748764594F8343F12A0223B /* InternalUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InternalUtils.swift; path = Sources/BrightroomEngine/Library/InternalUtils.swift; sourceTree = "<group>"; };
+		0E9E58927F4D485C5BC6A5978DA73CBA /* CropView._CropScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CropView._CropScrollView.swift; path = Sources/BrightroomUI/Shared/Components/Crop/CropView._CropScrollView.swift; sourceTree = "<group>"; };
+		0F7264AF6972D6B11A5DA651BB79948F /* Signpost.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Signpost.swift; path = Sources/Verge/Library/Signpost.swift; sourceTree = "<group>"; };
+		0FC72A25C56406F17881B6E9E6564074 /* Pipeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pipeline.swift; path = Sources/Verge/Store/Pipeline.swift; sourceTree = "<group>"; };
+		1115C6239A61FD9F1606F61A310E9379 /* AtomicBridges.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AtomicBridges.h; path = Sources/VergeObjcBridge/include/AtomicBridges.h; sourceTree = "<group>"; };
+		11428ED1BA68A5353060342A9295C8E5 /* Brightroom-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Brightroom-dummy.m"; sourceTree = "<group>"; };
+		127CA7C532DDAD3EF0195C84D4D2B1F2 /* CoreGraphics+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CoreGraphics+.swift"; path = "Sources/BrightroomEngine/Engine/CoreGraphics+.swift"; sourceTree = "<group>"; };
+		13F761159360379AEB2BCC2D1D8F3DB9 /* Pods-WhiteAndFlurryTest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WhiteAndFlurryTest-acknowledgements.plist"; sourceTree = "<group>"; };
+		19DEDF97523F938C04F3DEDEDC281AEF /* CIImage+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CIImage+.swift"; path = "Sources/BrightroomEngine/Library/CIImage+.swift"; sourceTree = "<group>"; };
+		1A4FA781781E1F8A81F47C7252B9EBCD /* Pods-WhiteAndFlurryTest-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WhiteAndFlurryTest-frameworks.sh"; sourceTree = "<group>"; };
+		1BA373A8879790E0E655DB4E1B71BA50 /* ClassicImageEditControlViewBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditControlViewBase.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/Components/ClassicImageEditControlViewBase.swift"; sourceTree = "<group>"; };
+		1DC67658793F59418174D3CA49E40D15 /* Optional+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Optional+.swift"; path = "Sources/BrightroomEngine/Library/Optional+.swift"; sourceTree = "<group>"; };
+		1DDF187E380078CE826C8A157A350301 /* CropView.CropInsideOverlay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CropView.CropInsideOverlay.swift; path = Sources/BrightroomUI/Shared/Components/Crop/CropView.CropInsideOverlay.swift; sourceTree = "<group>"; };
+		1E30CC97AA3F6E0B329806E589866E51 /* Derived+Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Derived+Combine.swift"; path = "Sources/Verge/Derived/Derived+Combine.swift"; sourceTree = "<group>"; };
+		1E46CFFF988F8936D366BC4F145D0D54 /* Pods-WhiteAndFlurryTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhiteAndFlurryTest.release.xcconfig"; sourceTree = "<group>"; };
+		1E47E2A01481B1BDA13F715F8DCAB102 /* PixelEditorCodeBasedView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PixelEditorCodeBasedView.swift; path = Sources/BrightroomUI/Shared/Utils/PixelEditorCodeBasedView.swift; sourceTree = "<group>"; };
+		1ED18D9A2C3435AD79720AB85A6BF179 /* MutationTrace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutationTrace.swift; path = Sources/Verge/Logging/MutationTrace.swift; sourceTree = "<group>"; };
+		1EFEB70CE5ADFD1055618DDC04063A7F /* StoreWrapperType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoreWrapperType.swift; path = Sources/Verge/Store/StoreWrapperType.swift; sourceTree = "<group>"; };
+		20D3B7E1BFD2C8246320F2CFB5DBBD4A /* FilterSaturation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterSaturation.swift; path = Sources/BrightroomEngine/Filter/FilterSaturation.swift; sourceTree = "<group>"; };
+		211B1B35FE0E46F43384204B4A3DF06A /* SwiftUICropView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftUICropView.swift; path = Sources/BrightroomUI/Shared/Components/Crop/SwiftUICropView.swift; sourceTree = "<group>"; };
+		212368A538FDC260B95358C0D7EEFE81 /* ClassicImageEditMaskControlView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditMaskControlView.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/Components/ClassicImageEditMaskControlView.swift"; sourceTree = "<group>"; };
+		22238EB77029A097EC5A818B262838E1 /* LoadingBlurryOverlayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoadingBlurryOverlayView.swift; path = Sources/BrightroomUI/Shared/Components/LoadingBlurryOverlayView.swift; sourceTree = "<group>"; };
+		22B2925086B11B3FF247B65B8E2C4C20 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
+		24F4BF4A928863C4FBD73E85183323D6 /* Verge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Verge.modulemap; sourceTree = "<group>"; };
+		27575A9C76FF5ACA88E660BA63A00901 /* ClassicImageEditOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditOptions.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/ClassicImageEditOptions.swift"; sourceTree = "<group>"; };
+		2801CECB63A2891FE415772E1B107D6E /* Filtering.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filtering.swift; path = Sources/BrightroomEngine/Core/Filtering.swift; sourceTree = "<group>"; };
+		2A37AF26D4DD27C03109CEEDFE6B5DAA /* Store.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Store.swift; path = Sources/Verge/Store/Store.swift; sourceTree = "<group>"; };
+		2AFF396051DFB2B44D450EC1A1E7309A /* EditingCrop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EditingCrop.swift; path = Sources/BrightroomEngine/Core/EditingCrop.swift; sourceTree = "<group>"; };
+		2B97E65A14FD63C81E027E78EE896408 /* Verge-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Verge-prefix.pch"; sourceTree = "<group>"; };
+		2D08BD1EA7F2E0516C06009A58D595F7 /* StoreType+SwiftUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StoreType+SwiftUI.swift"; path = "Sources/Verge/Store/StoreType+SwiftUI.swift"; sourceTree = "<group>"; };
+		2D37C4B2D3FDF23219AB13C8E1CBF6BE /* Comparer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Comparer.swift; path = Sources/Verge/Store/Comparer.swift; sourceTree = "<group>"; };
+		2E20E34DC3F94DB73433FF7BE1B81A6A /* _VergeObservableObjectBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _VergeObservableObjectBase.swift; path = Sources/Verge/Store/_VergeObservableObjectBase.swift; sourceTree = "<group>"; };
+		2EC0586FC668F2D2D66338A6C94DBE5C /* _COWFragment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _COWFragment.swift; path = Sources/Verge/Utility/_COWFragment.swift; sourceTree = "<group>"; };
+		34E1592A15C57E65D6C9848376575674 /* DefaultStoreLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultStoreLogger.swift; path = Sources/Verge/Logging/DefaultStoreLogger.swift; sourceTree = "<group>"; };
+		365D425460B3368F27EFCEA9C09E1B1A /* Pods-WhiteAndFlurryTest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WhiteAndFlurryTest.modulemap"; sourceTree = "<group>"; };
+		365F0E65915A924F761A58E451D88F28 /* Scan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scan.swift; path = Sources/Verge/Store/Scan.swift; sourceTree = "<group>"; };
+		36A27FC719B641F026BB538AF6A6B28F /* StoreType+Assignee.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StoreType+Assignee.swift"; path = "Sources/Verge/Store/StoreType+Assignee.swift"; sourceTree = "<group>"; };
+		36B09CB9E8E8382EDA12FAA725887AD1 /* ImageTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTool.swift; path = Sources/BrightroomEngine/Engine/ImageTool.swift; sourceTree = "<group>"; };
+		3A7AD67D6A1C0DC8695BACE8DF060C9F /* ClassicImageEditStepSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditStepSlider.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/Components/ClassicImageEditStepSlider.swift"; sourceTree = "<group>"; };
+		3AC9DE433B4D926237E2992D8152B178 /* PhotosCropViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotosCropViewController.swift; path = "Sources/BrightroomUI/Built-in UI/PhotosCrop/PhotosCropViewController.swift"; sourceTree = "<group>"; };
+		3BBCDEFBBC61DE95F5BF583E2C97EE07 /* FilterExposure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterExposure.swift; path = Sources/BrightroomEngine/Filter/FilterExposure.swift; sourceTree = "<group>"; };
+		3D4D38D3E2F416EC6D078FC5D4E8797A /* Storage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = Sources/Verge/Library/Storage.swift; sourceTree = "<group>"; };
+		3DDB3A4FC85747352DE0B7FD6469E94D /* VergeConcurrency+AtomicInt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "VergeConcurrency+AtomicInt.swift"; path = "Sources/Verge/Library/VergeConcurrency+AtomicInt.swift"; sourceTree = "<group>"; };
+		3EF965946711C93148DD65B571CC15FF /* CropView.CropOutsideOverlay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CropView.CropOutsideOverlay.swift; path = Sources/BrightroomUI/Shared/Components/Crop/CropView.CropOutsideOverlay.swift; sourceTree = "<group>"; };
+		42248DA87324D92E11BC17DE508BD99C /* Verge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Verge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4384C8BF64BF5D6EDAC1EAC9DD0A7E92 /* TransitionPatch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TransitionPatch-umbrella.h"; sourceTree = "<group>"; };
+		46E04073C01C2B8E544CD7EB1BFFC579 /* Edge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edge.swift; path = Sources/Verge/Utility/Edge.swift; sourceTree = "<group>"; };
+		4734FC893292CF991240E411D1BF8C88 /* BlurryMaskingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurryMaskingView.swift; path = Sources/BrightroomUI/Shared/Components/Drawing/BlurryMaskingView.swift; sourceTree = "<group>"; };
+		4EC73B62B0A6B834355CE2AA2213F7D2 /* ClassicImageEditViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditViewController.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/ClassicImageEditViewController.swift"; sourceTree = "<group>"; };
+		51638F5C779ACC0646C262B3F1C2941F /* TransitionPatch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TransitionPatch-Info.plist"; sourceTree = "<group>"; };
+		5270EB5610791D9BDFC9384A2C23A0B5 /* Verge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Verge-umbrella.h"; sourceTree = "<group>"; };
+		52E73B3AB3FA204E39330842DE762F20 /* FilterColorCube.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterColorCube.swift; path = Sources/BrightroomEngine/Filter/FilterColorCube.swift; sourceTree = "<group>"; };
+		54B28FEFADEAC6547CD426F7261C5E28 /* ClassicImageEditFilterControlBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditFilterControlBase.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/Components/FilterControl/ClassicImageEditFilterControlBase.swift"; sourceTree = "<group>"; };
+		55637E663CD3B2A49046E156F36CB18C /* EditingStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EditingStack.swift; path = Sources/BrightroomEngine/Core/EditingStack.swift; sourceTree = "<group>"; };
+		560A7DFEECDDE95D7C3EBB1920A257E6 /* TransitionPatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TransitionPatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		578D2523458D79C9241BF96460F703D5 /* ClassicImageEditCropControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditCropControl.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/Components/ClassicImageEditCropControl.swift"; sourceTree = "<group>"; };
+		57B9ADFDA577CBA8468698AAFEE35052 /* BackgroundDeallocationQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackgroundDeallocationQueue.swift; path = Sources/Verge/Library/BackgroundDeallocationQueue.swift; sourceTree = "<group>"; };
+		5B25642B84C6772E64CB6C3BE4195B6E /* DrawnPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawnPath.swift; path = Sources/BrightroomEngine/Core/DrawnPath.swift; sourceTree = "<group>"; };
+		5B907ECB37C739F0019C7B9F18FBF1F0 /* FilterBrightness.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterBrightness.swift; path = Sources/BrightroomEngine/Filter/FilterBrightness.swift; sourceTree = "<group>"; };
+		5BCF280D9DB2A43D9BCCC3C6248FF2CE /* Changes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Changes.swift; path = Sources/Verge/Store/Changes.swift; sourceTree = "<group>"; };
+		5C262FEB5CF9B5BEB800F23BB9551B6F /* Brightroom-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Brightroom-prefix.pch"; sourceTree = "<group>"; };
+		5CD14A4C7001C29788FAAD7CA0C2E731 /* FilterGaussianBlur.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterGaussianBlur.swift; path = Sources/BrightroomEngine/Filter/FilterGaussianBlur.swift; sourceTree = "<group>"; };
+		5DD6ABF9CEF18E7768EB279D6780CB6E /* ClassicImageEditTemperatureControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditTemperatureControl.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/Components/FilterControl/ClassicImageEditTemperatureControl.swift"; sourceTree = "<group>"; };
+		5E977EDC1B0772D75B3A4957ADF5B95F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5EC2F50C138C0F6C382736502DBD40A1 /* NonAtomicVersionCounter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NonAtomicVersionCounter.swift; path = Sources/Verge/Store/NonAtomicVersionCounter.swift; sourceTree = "<group>"; };
+		60C402DB3EA463BA8D1CA4B4C51BB864 /* Verge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Verge.debug.xcconfig; sourceTree = "<group>"; };
+		6248264513D434ACD64051FFD0BED895 /* RuntimeError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuntimeError.swift; path = Sources/Verge/Logging/RuntimeError.swift; sourceTree = "<group>"; };
+		6ABB1FD5908860AD676E01F8E36F6774 /* MetalImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetalImageView.swift; path = Sources/BrightroomUI/Shared/Components/ImageViews/MetalImageView.swift; sourceTree = "<group>"; };
+		6AF14F62B85F8D851535BAAE77CB93E8 /* FilterSharpen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterSharpen.swift; path = Sources/BrightroomEngine/Filter/FilterSharpen.swift; sourceTree = "<group>"; };
+		6BECF510F1E4E3B7E04AA217DD7DB4CC /* ClassicImageEditViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditViewModel.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/ClassicImageEditViewModel.swift"; sourceTree = "<group>"; };
+		6DC7DEA16C1454419E1ACF9B0F51AAA3 /* TransitionPatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TransitionPatch.framework; path = TransitionPatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E2C26145A02D240E29A868EDE9A6961 /* ClassicImageEditSaturationControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditSaturationControl.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/Components/FilterControl/ClassicImageEditSaturationControl.swift"; sourceTree = "<group>"; };
+		6E3E7198B082612451E60C8997626CE7 /* CoreImageInspector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreImageInspector.swift; path = Sources/BrightroomEngine/ColorCube/CoreImageInspector.swift; sourceTree = "<group>"; };
+		6EF1AC4A5DF08B40B37F7579D805EA5B /* TransitionPatch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TransitionPatch-prefix.pch"; sourceTree = "<group>"; };
+		6EF65D2508DE9EC98E38E8D0BDFEDA79 /* ClassicImageEditControlStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditControlStackView.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/Components/ClassicImageEditControlStackView.swift"; sourceTree = "<group>"; };
+		6F12D726F249B150FA64C4A65173EAB6 /* CropView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CropView.swift; path = Sources/BrightroomUI/Shared/Components/Crop/CropView.swift; sourceTree = "<group>"; };
+		6F1AF18FEA2AC7BAEB9F015F17276858 /* _ImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _ImageView.swift; path = Sources/BrightroomUI/Shared/Components/ImageViews/_ImageView.swift; sourceTree = "<group>"; };
+		714AF3C473AF51482A04A4246CB6922E /* AtomicBridges.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AtomicBridges.m; path = Sources/VergeObjcBridge/AtomicBridges.m; sourceTree = "<group>"; };
+		722C190D0F505B8D02D5C963DFE969E3 /* EngineLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EngineLog.swift; path = Sources/BrightroomEngine/Library/EngineLog.swift; sourceTree = "<group>"; };
+		7304D1F9B38BDE14B11E28DDC18F15C7 /* PhotosCropAspectRatioControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotosCropAspectRatioControl.swift; path = "Sources/BrightroomUI/Built-in UI/PhotosCrop/PhotosCropAspectRatioControl.swift"; sourceTree = "<group>"; };
+		751F874A68CF7AD72934792D7831B149 /* Verge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Verge-dummy.m"; sourceTree = "<group>"; };
+		754D5B3068AA20E20D17110792EF4A00 /* StateReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StateReader.swift; path = Sources/Verge/SwiftUI/StateReader.swift; sourceTree = "<group>"; };
+		7C1F36F20E1160D909BA0EF7810AA6C1 /* OvalBrush.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OvalBrush.swift; path = Sources/BrightroomEngine/Core/OvalBrush.swift; sourceTree = "<group>"; };
+		7C518268731A4C1344FB7F703FF35499 /* ClassicImageEditNavigationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditNavigationView.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/Components/ClassicImageEditNavigationView.swift"; sourceTree = "<group>"; };
+		7EC7BEF88A26BE51E11DC5485C08F015 /* Derived.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Derived.swift; path = Sources/Verge/Derived/Derived.swift; sourceTree = "<group>"; };
+		824C8295FDD28725348EB137BE1D939F /* Store+Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Store+Combine.swift"; path = "Sources/Verge/Store/Store+Combine.swift"; sourceTree = "<group>"; };
+		8288D9ABC4DEEFF9A4D292407A0BCE8C /* FilterUnsharpMask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterUnsharpMask.swift; path = Sources/BrightroomEngine/Filter/FilterUnsharpMask.swift; sourceTree = "<group>"; };
+		83AD113572FD647233E8CA7D80A6E718 /* EditorLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EditorLog.swift; path = Sources/BrightroomUI/Shared/Utils/EditorLog.swift; sourceTree = "<group>"; };
+		8539A3779A1E3619A20C4AB87F96D6A2 /* _StateTypeContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _StateTypeContainer.swift; path = Sources/Verge/Store/_StateTypeContainer.swift; sourceTree = "<group>"; };
+		853ECCD037F38F91CF868221B88240E7 /* BrightroomEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BrightroomEngine.swift; path = Sources/BrightroomEngine/BrightroomEngine.swift; sourceTree = "<group>"; };
+		85EA90E6ED459133D03004FE686EA015 /* ClassicImageEditContrastControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditContrastControl.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/Components/FilterControl/ClassicImageEditContrastControl.swift"; sourceTree = "<group>"; };
+		8700FE8D98FE12281359832D3E25805B /* Wrap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Wrap.swift; path = Sources/BrightroomUI/Shared/Wrap.swift; sourceTree = "<group>"; };
+		875347325B8062939B82B6DA4A7F6396 /* StoreLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoreLogger.swift; path = Sources/Verge/Logging/StoreLogger.swift; sourceTree = "<group>"; };
+		89091DD2139D77FFF0F0BE9F53C4ACA1 /* ClassicImageEditDoodleControlView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditDoodleControlView.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/Components/ClassicImageEditDoodleControlView.swift"; sourceTree = "<group>"; };
+		8C593D97EBB3257AA8673FD56FDEF75D /* UIStateStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIStateStore.swift; path = Sources/Verge/Store/UIStateStore.swift; sourceTree = "<group>"; };
+		8D5FEF09433A5772293D740AB0BF69CA /* TransitionPatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TransitionPatch.release.xcconfig; sourceTree = "<group>"; };
+		901380C964BF8177000952DFB2190E2A /* CropView._InteractiveCropGuideView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CropView._InteractiveCropGuideView.swift; path = Sources/BrightroomUI/Shared/Components/Crop/CropView._InteractiveCropGuideView.swift; sourceTree = "<group>"; };
+		90A35D292500196839BE5E80C5EBEE7C /* FilterHighlights.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterHighlights.swift; path = Sources/BrightroomEngine/Filter/FilterHighlights.swift; sourceTree = "<group>"; };
+		9205E1BEA14812783E6572634E16E405 /* Changes+Deprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Changes+Deprecated.swift"; path = "Sources/Verge/Store/Changes+Deprecated.swift"; sourceTree = "<group>"; };
+		929A54E602752B83FD88A6D0A89989BC /* BrightroomUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BrightroomUI.swift; path = Sources/BrightroomUI/Shared/BrightroomUI.swift; sourceTree = "<group>"; };
+		95617CAF8C0F8F1D6D40D48B16DFEEFD /* ClassicImageEditClarityControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditClarityControl.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/Components/FilterControl/ClassicImageEditClarityControl.swift"; sourceTree = "<group>"; };
+		9706BD33B0EF9616F7BD12BFACE4547E /* FilterContrast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterContrast.swift; path = Sources/BrightroomEngine/Filter/FilterContrast.swift; sourceTree = "<group>"; };
+		9720E36A7D0057CEB0A2806ED1AE814A /* StoreType+BindingDerived.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StoreType+BindingDerived.swift"; path = "Sources/Verge/Store/StoreType+BindingDerived.swift"; sourceTree = "<group>"; };
+		97B61A248FA709D30EEBEF3E79817078 /* _BrightroomDebounce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _BrightroomDebounce.swift; path = Sources/BrightroomEngine/Library/_BrightroomDebounce.swift; sourceTree = "<group>"; };
+		989F0AC20EFE530388942E8A921132AA /* EditingStack.Edit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EditingStack.Edit.swift; path = Sources/BrightroomEngine/Core/EditingStack.Edit.swift; sourceTree = "<group>"; };
+		997C797D0499E88839D7DA03379705FC /* FilterHighlightShadowTint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterHighlightShadowTint.swift; path = Sources/BrightroomEngine/Filter/FilterHighlightShadowTint.swift; sourceTree = "<group>"; };
+		99DBB9908C213844D58D2315AB6C23A7 /* TransitionPatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TransitionPatch.debug.xcconfig; sourceTree = "<group>"; };
+		9A9CA89C0BAD9AAF1E13695717D4AFA5 /* Derived+Assign.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Derived+Assign.swift"; path = "Sources/Verge/Derived/Derived+Assign.swift"; sourceTree = "<group>"; };
+		9B0B86DD9997BA116C01375023745FB7 /* ClassicImageEditStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditStyle.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/ClassicImageEditStyle.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F836B0C832F9DA32A06741FA0F6E76F /* ImageProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProvider.swift; path = Sources/BrightroomEngine/DataSource/ImageProvider.swift; sourceTree = "<group>"; };
+		A059B6E8838D6635FF01126E92AD53CD /* Source.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Source.swift; path = TransitionPatch/Source.swift; sourceTree = "<group>"; };
+		A0FC9FB20772565CB0695587262C869E /* Pods-WhiteAndFlurryTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhiteAndFlurryTest.debug.xcconfig"; sourceTree = "<group>"; };
+		A16E5E63A56205A3821111495EF6FD28 /* FilterShadows.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterShadows.swift; path = Sources/BrightroomEngine/Filter/FilterShadows.swift; sourceTree = "<group>"; };
+		A2A9D447094DFA8C089FC94653B47A4E /* ColorCubeHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorCubeHelper.swift; path = Sources/BrightroomEngine/ColorCube/ColorCubeHelper.swift; sourceTree = "<group>"; };
+		A2C6C0FB502023734BF3E1458DDDBA4A /* Brightroom.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Brightroom.modulemap; sourceTree = "<group>"; };
+		A39408684FF1E963B1293192CF60C60C /* ClassicImageEditFadeControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditFadeControl.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/Components/FilterControl/ClassicImageEditFadeControl.swift"; sourceTree = "<group>"; };
+		A43ABBB6E0DF7A5367BD5BF2E26E86FE /* TransitionPatch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TransitionPatch.modulemap; sourceTree = "<group>"; };
+		A558C98D2B96C04ED50C6C9E97B81502 /* VergeAnyCancellable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VergeAnyCancellable.swift; path = Sources/Verge/Library/VergeAnyCancellable.swift; sourceTree = "<group>"; };
+		A66F969900E13D4D4A898F73E1468A96 /* SmoothPathDrawingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SmoothPathDrawingView.swift; path = Sources/BrightroomUI/Shared/Components/Drawing/SmoothPathDrawingView.swift; sourceTree = "<group>"; };
+		A6E4B4F254EE899968CCF44E016EEDBA /* Verge-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Verge-Info.plist"; sourceTree = "<group>"; };
+		A8E6109B2650BBDC41D8B336DB68EF15 /* ClassicImageEditRootControlView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditRootControlView.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/Components/ClassicImageEditRootControlView.swift"; sourceTree = "<group>"; };
+		AA088AC8FDAE6D2314A211C0E205DD39 /* CanvasView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CanvasView.swift; path = Sources/BrightroomUI/Shared/Components/Drawing/CanvasView.swift; sourceTree = "<group>"; };
+		AC5CE289FE193FB8FFA54E92875067E5 /* Pods-WhiteAndFlurryTest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WhiteAndFlurryTest-umbrella.h"; sourceTree = "<group>"; };
+		B004AD1F874429238763A3A69A53ECBD /* Log.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Log.swift; path = Sources/Verge/Library/Log.swift; sourceTree = "<group>"; };
+		B2BE4113BCC2FB557931476C7FFFFD8E /* UIStateStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIStateStore.swift; path = Sources/BrightroomUI/Shared/Utils/UIStateStore.swift; sourceTree = "<group>"; };
+		B475D5B642C5D2DCD8A4389BE86BE635 /* DetachedDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DetachedDispatcher.swift; path = Sources/Verge/Store/DetachedDispatcher.swift; sourceTree = "<group>"; };
+		B4A91532520083CB7A13DA63610B6B79 /* TargetQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TargetQueue.swift; path = Sources/Verge/Store/TargetQueue.swift; sourceTree = "<group>"; };
+		B603510D02CFD27F63AA155A34C39E0C /* VergeConcurrency+SynchronizationTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "VergeConcurrency+SynchronizationTracker.swift"; path = "Sources/Verge/Library/VergeConcurrency+SynchronizationTracker.swift"; sourceTree = "<group>"; };
+		B6A6B42B1032DAEB52776ACF77223848 /* StoreType+Derived.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StoreType+Derived.swift"; path = "Sources/Verge/Store/StoreType+Derived.swift"; sourceTree = "<group>"; };
+		B88593FFFEF43B5965BA1E412C16EC50 /* AutoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoLayout.swift; path = Sources/BrightroomUI/Shared/Utils/AutoLayout.swift; sourceTree = "<group>"; };
+		B97317BDD24367013CA256E6215E6690 /* SwiftUIPhotosCropView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftUIPhotosCropView.swift; path = "Sources/BrightroomUI/Built-in UI/PhotosCrop/SwiftUIPhotosCropView.swift"; sourceTree = "<group>"; };
+		BA79E58F53A00001591D41F9D0628160 /* DispatcherBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DispatcherBase.swift; path = Sources/Verge/Store/DispatcherBase.swift; sourceTree = "<group>"; };
+		BD0B93D7FE566F4CB3267F19C6F91B9A /* ClassicImageEditGaussianBlurControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditGaussianBlurControl.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/Components/FilterControl/ClassicImageEditGaussianBlurControl.swift"; sourceTree = "<group>"; };
+		BD0BFC29C39A0F361571F09D75B10CC3 /* GraphicDrawing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphicDrawing.swift; path = Sources/BrightroomEngine/Core/GraphicDrawing.swift; sourceTree = "<group>"; };
+		BDA419464247B0C8CEA1589E1C1BADA5 /* Geometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Geometry.swift; path = Sources/BrightroomEngine/Library/Geometry.swift; sourceTree = "<group>"; };
+		BDD95C41D68A8515C7490CAEBF19D1D9 /* ParameterRange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterRange.swift; path = Sources/BrightroomEngine/Core/ParameterRange.swift; sourceTree = "<group>"; };
+		BE9DCE589AAD19A32DD664703263817A /* FilterPreset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterPreset.swift; path = Sources/BrightroomEngine/Filter/FilterPreset.swift; sourceTree = "<group>"; };
+		C066FA4E242B69F32E8C2149C64E9808 /* ResourceBundle-BrightroomUI-Brightroom-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-BrightroomUI-Brightroom-Info.plist"; sourceTree = "<group>"; };
+		C12CCB6A0670C1FAB133B5D96470C2CF /* Media.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = Sources/BrightroomUI/Media.xcassets; sourceTree = "<group>"; };
+		C187E93C144E6686684C663D74D8571E /* EditingCrop+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "EditingCrop+.swift"; path = "Sources/BrightroomUI/Shared/Utils/EditingCrop+.swift"; sourceTree = "<group>"; };
+		C225E8A9AB71280DA6BD541632EC2886 /* ClassicImageEditExposureControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditExposureControl.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/Components/FilterControl/ClassicImageEditExposureControl.swift"; sourceTree = "<group>"; };
+		C487A4E573567BA52464B9A2ED21DBD9 /* Verge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Verge.framework; path = Verge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C728B4351FC2F8683E4D9361E827DB28 /* Verge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Verge.release.xcconfig; sourceTree = "<group>"; };
+		C7340411B4886753DC87FA1EE0A5E03D /* ColorCubeStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorCubeStorage.swift; path = Sources/BrightroomEngine/ColorCube/ColorCubeStorage.swift; sourceTree = "<group>"; };
+		C8C43E52F514E5EDFF46243CA1391FFD /* ClassicImageEditShadowsControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditShadowsControl.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/Components/FilterControl/ClassicImageEditShadowsControl.swift"; sourceTree = "<group>"; };
+		C97894C80A544088B5D272009FFBAF5B /* CachedMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedMap.swift; path = Sources/Verge/Library/CachedMap.swift; sourceTree = "<group>"; };
+		CA54DD529B4A22BBF2A6CFD0316F3933 /* VergeConcurrency.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VergeConcurrency.swift; path = Sources/Verge/Library/VergeConcurrency.swift; sourceTree = "<group>"; };
+		CB6A113E7DE7EAA6BA88F8FA08E16AF8 /* ImagePreviewView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePreviewView.swift; path = Sources/BrightroomUI/Shared/Components/ImageViews/ImagePreviewView.swift; sourceTree = "<group>"; };
+		CBFDE0C05002BA88B5DA106E65F6E849 /* EventEmitter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventEmitter.swift; path = Sources/Verge/Library/EventEmitter.swift; sourceTree = "<group>"; };
+		CC64DA97E315D0C96E057E31D02CAE30 /* Brightroom-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Brightroom-Info.plist"; sourceTree = "<group>"; };
+		CFD638A6FD1BDE17756146E783878677 /* Brightroom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Brightroom.debug.xcconfig; sourceTree = "<group>"; };
+		D2A59F5CF89C1D4DA09654FD7A1EAC11 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D426CD40BF432F47B78B7E42A2FC8A31 /* StoreMiddleware.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoreMiddleware.swift; path = Sources/Verge/Store/StoreMiddleware.swift; sourceTree = "<group>"; };
+		D51B074850E2F1E8ECB23767706CA7ED /* ClassicImageEditVignetteControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditVignetteControl.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/Components/FilterControl/ClassicImageEditVignetteControl.swift"; sourceTree = "<group>"; };
+		D55EBCE785960018081BB989045A3DA1 /* VergeConcurrency+AtomicReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "VergeConcurrency+AtomicReference.swift"; path = "Sources/Verge/Library/VergeConcurrency+AtomicReference.swift"; sourceTree = "<group>"; };
+		D5DDC3A7A5527035C25DACC4B8F92E81 /* Brightroom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Brightroom.release.xcconfig; sourceTree = "<group>"; };
+		D5F4F232572187EEF9CFFDFDDD498CB6 /* DispatcherType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DispatcherType.swift; path = Sources/Verge/Store/DispatcherType.swift; sourceTree = "<group>"; };
+		D7096AA9BE6EC1C4794090A4DAC8BD85 /* UIButton+Closure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Closure.swift"; path = "Sources/BrightroomUI/Shared/Utils/UIButton+Closure.swift"; sourceTree = "<group>"; };
+		D9B2D8D4A479A9C345A796DFC96D6799 /* FilterVignette.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterVignette.swift; path = Sources/BrightroomEngine/Filter/FilterVignette.swift; sourceTree = "<group>"; };
+		DD920FA73FFF1388A5CC873D883B3C5E /* Brightroom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Brightroom.framework; path = Brightroom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE9E9E2B97A02A856B4592414DEDB05B /* StateType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StateType.swift; path = Sources/Verge/Store/StateType.swift; sourceTree = "<group>"; };
+		DF8006B489230AEC5E7D5C1E286A7568 /* ColorCubeLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorCubeLoader.swift; path = Sources/BrightroomEngine/ColorCube/ColorCubeLoader.swift; sourceTree = "<group>"; };
+		E107C057BE7EB16B5C4633C11AE3E335 /* VergeObjcBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VergeObjcBridge.h; path = Sources/VergeObjcBridge/VergeObjcBridge.h; sourceTree = "<group>"; };
+		E11A30281B9823E5C83EA8210BAA9927 /* Pods-WhiteAndFlurryTest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WhiteAndFlurryTest-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E7AB9EFF071B42C00A08661F96FAEDF7 /* BatchCommit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BatchCommit.swift; path = Sources/Verge/Utility/BatchCommit.swift; sourceTree = "<group>"; };
+		E8A02F86C49207E7BB3E2D039A86B75E /* ImageRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageRenderer.swift; path = Sources/BrightroomEngine/Engine/ImageRenderer.swift; sourceTree = "<group>"; };
+		EA779C186D2E8D78779FC62E64EDAB8B /* TempCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TempCode.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/Components/FilterControl/TempCode.swift"; sourceTree = "<group>"; };
+		EAA812DA3F574BA6D237C6300ACB6B18 /* FilterFade.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterFade.swift; path = Sources/BrightroomEngine/Filter/FilterFade.swift; sourceTree = "<group>"; };
+		EB9AA7F9C0F6D2A86163CFD20B621E80 /* EditingStack.CropModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EditingStack.CropModifier.swift; path = Sources/BrightroomEngine/Core/EditingStack.CropModifier.swift; sourceTree = "<group>"; };
+		EDCD0F76C70E68304B5F017B0C2BBF88 /* Pods_WhiteAndFlurryTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WhiteAndFlurryTest.framework; path = "Pods-WhiteAndFlurryTest.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE01016072E90F87F4FB34D7664034F8 /* BrightroomUI.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = BrightroomUI.bundle; path = "Brightroom-BrightroomUI.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF0BB9A4510D44A97FA548BC8EF282BB /* BlurredMask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurredMask.swift; path = Sources/BrightroomEngine/Core/BlurredMask.swift; sourceTree = "<group>"; };
+		F01FA8B8B216DDC52A2B6AD07B598F92 /* ClassicImageEditSharpenControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditSharpenControl.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/Components/FilterControl/ClassicImageEditSharpenControl.swift"; sourceTree = "<group>"; };
+		F402587CFA3E27D3796B3F1E07EE7014 /* ClassicImageEditHighlightsControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassicImageEditHighlightsControl.swift; path = "Sources/BrightroomUI/Built-in UI/ClassicImageEdit/Components/FilterControl/ClassicImageEditHighlightsControl.swift"; sourceTree = "<group>"; };
+		F47929DEB45A23CC221863F97D845A36 /* FilterTemperature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterTemperature.swift; path = Sources/BrightroomEngine/Filter/FilterTemperature.swift; sourceTree = "<group>"; };
+		F47F5A65FBEEDEE1E5A792C2D1E906AE /* Indexed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Indexed.swift; path = Sources/Verge/Library/Indexed.swift; sourceTree = "<group>"; };
+		F4FF270DDEA39ACF5560B60BB7F1AAB0 /* ViewModelBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewModelBase.swift; path = Sources/Verge/Utility/ViewModelBase.swift; sourceTree = "<group>"; };
+		F66EBB0BDB56A81758D80F55D181E888 /* Pods-WhiteAndFlurryTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WhiteAndFlurryTest-dummy.m"; sourceTree = "<group>"; };
+		F8223CE61EFCD79373A704BAEECC453A /* RuntimeSanitizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuntimeSanitizer.swift; path = Sources/Verge/Logging/RuntimeSanitizer.swift; sourceTree = "<group>"; };
+		F99896BBDE5BEF5AE010460FDE7FAAFD /* Pods-WhiteAndFlurryTest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WhiteAndFlurryTest-Info.plist"; sourceTree = "<group>"; };
+		FB3EB9FBCB8022CD242BA0DEB8C4EEA6 /* ImageSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageSource.swift; path = Sources/BrightroomEngine/DataSource/ImageSource.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FA5E6BE34E6BCEFA5AFFC028B5F1C38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C3EF415689E2DA45B92DB85EFD63E09 /* CoreImage.framework in Frameworks */,
+				F581F3511A274FB6B3ECC972C2BD3F85 /* Foundation.framework in Frameworks */,
+				90DABC9BD5DA584C9C98F3D049617456 /* TransitionPatch.framework in Frameworks */,
+				7A43DFC83DB600DE54479DAF42E94B6E /* UIKit.framework in Frameworks */,
+				1F0AA44660F790189610C5AC3BC907D1 /* Verge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2D9C75EDDE62B812EB213C2599F2A66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C06E8D5F49148EDAFBBE30312D0A629F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E266CE08893C2EFA0073F3EDF49DDD3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1437544D4529A9432FFE9B1CCD4DA0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1ABD95102B00B1983933B84898977A7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D518C122B4ABB3A63954826268A0CCB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D71F470DF0FC74C34F96BF381D17067 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D58C86E9F96A00625AB2CE218CDE6749 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15537F23FFA3CF792ED45A2F6B84D9E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1A990E3010683C80AE9392ADF35158FB /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				2EC0586FC668F2D2D66338A6C94DBE5C /* _COWFragment.swift */,
+				8539A3779A1E3619A20C4AB87F96D6A2 /* _StateTypeContainer.swift */,
+				2E20E34DC3F94DB73433FF7BE1B81A6A /* _VergeObservableObjectBase.swift */,
+				08C9067A7C0A9E8CEE676B1BE1902C5E /* ActivityTrace.swift */,
+				57B9ADFDA577CBA8468698AAFEE35052 /* BackgroundDeallocationQueue.swift */,
+				E7AB9EFF071B42C00A08661F96FAEDF7 /* BatchCommit.swift */,
+				C97894C80A544088B5D272009FFBAF5B /* CachedMap.swift */,
+				5BCF280D9DB2A43D9BCCC3C6248FF2CE /* Changes.swift */,
+				9205E1BEA14812783E6572634E16E405 /* Changes+Deprecated.swift */,
+				2D37C4B2D3FDF23219AB13C8E1CBF6BE /* Comparer.swift */,
+				34E1592A15C57E65D6C9848376575674 /* DefaultStoreLogger.swift */,
+				7EC7BEF88A26BE51E11DC5485C08F015 /* Derived.swift */,
+				9A9CA89C0BAD9AAF1E13695717D4AFA5 /* Derived+Assign.swift */,
+				1E30CC97AA3F6E0B329806E589866E51 /* Derived+Combine.swift */,
+				B475D5B642C5D2DCD8A4389BE86BE635 /* DetachedDispatcher.swift */,
+				BA79E58F53A00001591D41F9D0628160 /* DispatcherBase.swift */,
+				D5F4F232572187EEF9CFFDFDDD498CB6 /* DispatcherType.swift */,
+				46E04073C01C2B8E544CD7EB1BFFC579 /* Edge.swift */,
+				CBFDE0C05002BA88B5DA106E65F6E849 /* EventEmitter.swift */,
+				F47F5A65FBEEDEE1E5A792C2D1E906AE /* Indexed.swift */,
+				00B879AAE81AA3F954EB16568F97C35A /* InoutRef.swift */,
+				B004AD1F874429238763A3A69A53ECBD /* Log.swift */,
+				1ED18D9A2C3435AD79720AB85A6BF179 /* MutationTrace.swift */,
+				5EC2F50C138C0F6C382736502DBD40A1 /* NonAtomicVersionCounter.swift */,
+				0FC72A25C56406F17881B6E9E6564074 /* Pipeline.swift */,
+				6248264513D434ACD64051FFD0BED895 /* RuntimeError.swift */,
+				F8223CE61EFCD79373A704BAEECC453A /* RuntimeSanitizer.swift */,
+				365F0E65915A924F761A58E451D88F28 /* Scan.swift */,
+				0F7264AF6972D6B11A5DA651BB79948F /* Signpost.swift */,
+				754D5B3068AA20E20D17110792EF4A00 /* StateReader.swift */,
+				DE9E9E2B97A02A856B4592414DEDB05B /* StateType.swift */,
+				3D4D38D3E2F416EC6D078FC5D4E8797A /* Storage.swift */,
+				2A37AF26D4DD27C03109CEEDFE6B5DAA /* Store.swift */,
+				824C8295FDD28725348EB137BE1D939F /* Store+Combine.swift */,
+				875347325B8062939B82B6DA4A7F6396 /* StoreLogger.swift */,
+				D426CD40BF432F47B78B7E42A2FC8A31 /* StoreMiddleware.swift */,
+				36A27FC719B641F026BB538AF6A6B28F /* StoreType+Assignee.swift */,
+				9720E36A7D0057CEB0A2806ED1AE814A /* StoreType+BindingDerived.swift */,
+				B6A6B42B1032DAEB52776ACF77223848 /* StoreType+Derived.swift */,
+				2D08BD1EA7F2E0516C06009A58D595F7 /* StoreType+SwiftUI.swift */,
+				1EFEB70CE5ADFD1055618DDC04063A7F /* StoreWrapperType.swift */,
+				B4A91532520083CB7A13DA63610B6B79 /* TargetQueue.swift */,
+				8C593D97EBB3257AA8673FD56FDEF75D /* UIStateStore.swift */,
+				A558C98D2B96C04ED50C6C9E97B81502 /* VergeAnyCancellable.swift */,
+				CA54DD529B4A22BBF2A6CFD0316F3933 /* VergeConcurrency.swift */,
+				3DDB3A4FC85747352DE0B7FD6469E94D /* VergeConcurrency+AtomicInt.swift */,
+				D55EBCE785960018081BB989045A3DA1 /* VergeConcurrency+AtomicReference.swift */,
+				B603510D02CFD27F63AA155A34C39E0C /* VergeConcurrency+SynchronizationTracker.swift */,
+				F4FF270DDEA39ACF5560B60BB7F1AAB0 /* ViewModelBase.swift */,
+			);
+			name = Store;
+			sourceTree = "<group>";
+		};
+		350EE4BD7AAEBA268ED4D23C2AE47EBD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC82E137FE52CA0548870F5D746D9888 /* Pods-WhiteAndFlurryTest */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4C6C4B819AAB801EBE6B3B037AEBA1CD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				24F4BF4A928863C4FBD73E85183323D6 /* Verge.modulemap */,
+				751F874A68CF7AD72934792D7831B149 /* Verge-dummy.m */,
+				A6E4B4F254EE899968CCF44E016EEDBA /* Verge-Info.plist */,
+				2B97E65A14FD63C81E027E78EE896408 /* Verge-prefix.pch */,
+				5270EB5610791D9BDFC9384A2C23A0B5 /* Verge-umbrella.h */,
+				60C402DB3EA463BA8D1CA4B4C51BB864 /* Verge.debug.xcconfig */,
+				C728B4351FC2F8683E4D9361E827DB28 /* Verge.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Verge";
+			sourceTree = "<group>";
+		};
+		5CA491F0F4CC9164B4715B9C68A23173 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B90975DC111CED41A2A50427F4501D6A /* Brightroom */,
+				C6F52C2FC1FE93F6E7BC34CB4C6E3189 /* TransitionPatch */,
+				65D0D6DC05D7232A2717E0E0246B9215 /* Verge */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		65D0D6DC05D7232A2717E0E0246B9215 /* Verge */ = {
+			isa = PBXGroup;
+			children = (
+				913EA4E49D8CEAD1FF0F47C1DD10F43A /* ObjcBridge */,
+				1A990E3010683C80AE9392ADF35158FB /* Store */,
+				4C6C4B819AAB801EBE6B3B037AEBA1CD /* Support Files */,
+			);
+			name = Verge;
+			path = Verge;
+			sourceTree = "<group>";
+		};
+		6BF3568F41E91348AB3662C973532D2C /* UI-Classic */ = {
+			isa = PBXGroup;
+			children = (
+				6F1AF18FEA2AC7BAEB9F015F17276858 /* _ImageView.swift */,
+				B88593FFFEF43B5965BA1E412C16EC50 /* AutoLayout.swift */,
+				4734FC893292CF991240E411D1BF8C88 /* BlurryMaskingView.swift */,
+				929A54E602752B83FD88A6D0A89989BC /* BrightroomUI.swift */,
+				AA088AC8FDAE6D2314A211C0E205DD39 /* CanvasView.swift */,
+				007AD371DE59306C8843F64AFE920E93 /* CIImageDisplaying.swift */,
+				95617CAF8C0F8F1D6D40D48B16DFEEFD /* ClassicImageEditClarityControl.swift */,
+				85EA90E6ED459133D03004FE686EA015 /* ClassicImageEditContrastControl.swift */,
+				6EF65D2508DE9EC98E38E8D0BDFEDA79 /* ClassicImageEditControlStackView.swift */,
+				1BA373A8879790E0E655DB4E1B71BA50 /* ClassicImageEditControlViewBase.swift */,
+				578D2523458D79C9241BF96460F703D5 /* ClassicImageEditCropControl.swift */,
+				89091DD2139D77FFF0F0BE9F53C4ACA1 /* ClassicImageEditDoodleControlView.swift */,
+				01C7C04E9BCBB7D45E4E2630414912B5 /* ClassicImageEditEditMenuControlView.swift */,
+				C225E8A9AB71280DA6BD541632EC2886 /* ClassicImageEditExposureControl.swift */,
+				A39408684FF1E963B1293192CF60C60C /* ClassicImageEditFadeControl.swift */,
+				54B28FEFADEAC6547CD426F7261C5E28 /* ClassicImageEditFilterControlBase.swift */,
+				BD0B93D7FE566F4CB3267F19C6F91B9A /* ClassicImageEditGaussianBlurControl.swift */,
+				F402587CFA3E27D3796B3F1E07EE7014 /* ClassicImageEditHighlightsControl.swift */,
+				212368A538FDC260B95358C0D7EEFE81 /* ClassicImageEditMaskControlView.swift */,
+				7C518268731A4C1344FB7F703FF35499 /* ClassicImageEditNavigationView.swift */,
+				27575A9C76FF5ACA88E660BA63A00901 /* ClassicImageEditOptions.swift */,
+				01C533FABD6706C80BF1444BE69E894C /* ClassicImageEditPresetListControl.swift */,
+				A8E6109B2650BBDC41D8B336DB68EF15 /* ClassicImageEditRootControlView.swift */,
+				6E2C26145A02D240E29A868EDE9A6961 /* ClassicImageEditSaturationControl.swift */,
+				C8C43E52F514E5EDFF46243CA1391FFD /* ClassicImageEditShadowsControl.swift */,
+				F01FA8B8B216DDC52A2B6AD07B598F92 /* ClassicImageEditSharpenControl.swift */,
+				3A7AD67D6A1C0DC8695BACE8DF060C9F /* ClassicImageEditStepSlider.swift */,
+				9B0B86DD9997BA116C01375023745FB7 /* ClassicImageEditStyle.swift */,
+				5DD6ABF9CEF18E7768EB279D6780CB6E /* ClassicImageEditTemperatureControl.swift */,
+				4EC73B62B0A6B834355CE2AA2213F7D2 /* ClassicImageEditViewController.swift */,
+				6BECF510F1E4E3B7E04AA217DD7DB4CC /* ClassicImageEditViewModel.swift */,
+				D51B074850E2F1E8ECB23767706CA7ED /* ClassicImageEditVignetteControl.swift */,
+				6F12D726F249B150FA64C4A65173EAB6 /* CropView.swift */,
+				0E9E58927F4D485C5BC6A5978DA73CBA /* CropView._CropScrollView.swift */,
+				901380C964BF8177000952DFB2190E2A /* CropView._InteractiveCropGuideView.swift */,
+				1DDF187E380078CE826C8A157A350301 /* CropView.CropInsideOverlay.swift */,
+				3EF965946711C93148DD65B571CC15FF /* CropView.CropOutsideOverlay.swift */,
+				C187E93C144E6686684C663D74D8571E /* EditingCrop+.swift */,
+				83AD113572FD647233E8CA7D80A6E718 /* EditorLog.swift */,
+				CB6A113E7DE7EAA6BA88F8FA08E16AF8 /* ImagePreviewView.swift */,
+				22238EB77029A097EC5A818B262838E1 /* LoadingBlurryOverlayView.swift */,
+				6ABB1FD5908860AD676E01F8E36F6774 /* MetalImageView.swift */,
+				1E47E2A01481B1BDA13F715F8DCAB102 /* PixelEditorCodeBasedView.swift */,
+				A66F969900E13D4D4A898F73E1468A96 /* SmoothPathDrawingView.swift */,
+				211B1B35FE0E46F43384204B4A3DF06A /* SwiftUICropView.swift */,
+				EA779C186D2E8D78779FC62E64EDAB8B /* TempCode.swift */,
+				D7096AA9BE6EC1C4794090A4DAC8BD85 /* UIButton+Closure.swift */,
+				B2BE4113BCC2FB557931476C7FFFFD8E /* UIStateStore.swift */,
+				8700FE8D98FE12281359832D3E25805B /* Wrap.swift */,
+				A9BC60268B5DF4BEEF7D4F636EA15F04 /* Resources */,
+			);
+			name = "UI-Classic";
+			sourceTree = "<group>";
+		};
+		788E1F76A50BF854586A4E489026B647 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2C6C0FB502023734BF3E1458DDDBA4A /* Brightroom.modulemap */,
+				11428ED1BA68A5353060342A9295C8E5 /* Brightroom-dummy.m */,
+				CC64DA97E315D0C96E057E31D02CAE30 /* Brightroom-Info.plist */,
+				5C262FEB5CF9B5BEB800F23BB9551B6F /* Brightroom-prefix.pch */,
+				05729767CDF86FD73BB5FD0B121124B7 /* Brightroom-umbrella.h */,
+				CFD638A6FD1BDE17756146E783878677 /* Brightroom.debug.xcconfig */,
+				D5DDC3A7A5527035C25DACC4B8F92E81 /* Brightroom.release.xcconfig */,
+				C066FA4E242B69F32E8C2149C64E9808 /* ResourceBundle-BrightroomUI-Brightroom-Info.plist */,
+				C066FA4E242B69F32E8C2149C64E9808 /* ResourceBundle-BrightroomUI-Brightroom-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Brightroom";
+			sourceTree = "<group>";
+		};
+		7B30164FAA27781E699B71B23B84EA12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				560A7DFEECDDE95D7C3EBB1920A257E6 /* TransitionPatch.framework */,
+				42248DA87324D92E11BC17DE508BD99C /* Verge.framework */,
+				BF1765E06D9BA8824CC1E2C5A2DD91D1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84CFAA009A16628D9012F65AD26A395F /* UI-Crop */ = {
+			isa = PBXGroup;
+			children = (
+				7304D1F9B38BDE14B11E28DDC18F15C7 /* PhotosCropAspectRatioControl.swift */,
+				3AC9DE433B4D926237E2992D8152B178 /* PhotosCropViewController.swift */,
+				B97317BDD24367013CA256E6215E6690 /* SwiftUIPhotosCropView.swift */,
+				15537F23FFA3CF792ED45A2F6B84D9E4 /* Resources */,
+			);
+			name = "UI-Crop";
+			sourceTree = "<group>";
+		};
+		86CD9D678D426DDB8D2163A6BA014CDF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A43ABBB6E0DF7A5367BD5BF2E26E86FE /* TransitionPatch.modulemap */,
+				0D15EAB4F88676250498D9BDEE2AA10E /* TransitionPatch-dummy.m */,
+				51638F5C779ACC0646C262B3F1C2941F /* TransitionPatch-Info.plist */,
+				6EF1AC4A5DF08B40B37F7579D805EA5B /* TransitionPatch-prefix.pch */,
+				4384C8BF64BF5D6EDAC1EAC9DD0A7E92 /* TransitionPatch-umbrella.h */,
+				99DBB9908C213844D58D2315AB6C23A7 /* TransitionPatch.debug.xcconfig */,
+				8D5FEF09433A5772293D740AB0BF69CA /* TransitionPatch.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TransitionPatch";
+			sourceTree = "<group>";
+		};
+		913EA4E49D8CEAD1FF0F47C1DD10F43A /* ObjcBridge */ = {
+			isa = PBXGroup;
+			children = (
+				1115C6239A61FD9F1606F61A310E9379 /* AtomicBridges.h */,
+				714AF3C473AF51482A04A4246CB6922E /* AtomicBridges.m */,
+				E107C057BE7EB16B5C4633C11AE3E335 /* VergeObjcBridge.h */,
+			);
+			name = ObjcBridge;
+			sourceTree = "<group>";
+		};
+		A5423375AEE06AB244DD18A8B448165F /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				97B61A248FA709D30EEBEF3E79817078 /* _BrightroomDebounce.swift */,
+				EF0BB9A4510D44A97FA548BC8EF282BB /* BlurredMask.swift */,
+				853ECCD037F38F91CF868221B88240E7 /* BrightroomEngine.swift */,
+				19DEDF97523F938C04F3DEDEDC281AEF /* CIImage+.swift */,
+				A2A9D447094DFA8C089FC94653B47A4E /* ColorCubeHelper.swift */,
+				DF8006B489230AEC5E7D5C1E286A7568 /* ColorCubeLoader.swift */,
+				C7340411B4886753DC87FA1EE0A5E03D /* ColorCubeStorage.swift */,
+				127CA7C532DDAD3EF0195C84D4D2B1F2 /* CoreGraphics+.swift */,
+				6E3E7198B082612451E60C8997626CE7 /* CoreImageInspector.swift */,
+				5B25642B84C6772E64CB6C3BE4195B6E /* DrawnPath.swift */,
+				2AFF396051DFB2B44D450EC1A1E7309A /* EditingCrop.swift */,
+				55637E663CD3B2A49046E156F36CB18C /* EditingStack.swift */,
+				EB9AA7F9C0F6D2A86163CFD20B621E80 /* EditingStack.CropModifier.swift */,
+				989F0AC20EFE530388942E8A921132AA /* EditingStack.Edit.swift */,
+				722C190D0F505B8D02D5C963DFE969E3 /* EngineLog.swift */,
+				0C58741965F58D9771ADB0F9B68D8C6C /* EngineSanitizer.swift */,
+				5B907ECB37C739F0019C7B9F18FBF1F0 /* FilterBrightness.swift */,
+				52E73B3AB3FA204E39330842DE762F20 /* FilterColorCube.swift */,
+				9706BD33B0EF9616F7BD12BFACE4547E /* FilterContrast.swift */,
+				3BBCDEFBBC61DE95F5BF583E2C97EE07 /* FilterExposure.swift */,
+				EAA812DA3F574BA6D237C6300ACB6B18 /* FilterFade.swift */,
+				5CD14A4C7001C29788FAAD7CA0C2E731 /* FilterGaussianBlur.swift */,
+				90A35D292500196839BE5E80C5EBEE7C /* FilterHighlights.swift */,
+				997C797D0499E88839D7DA03379705FC /* FilterHighlightShadowTint.swift */,
+				2801CECB63A2891FE415772E1B107D6E /* Filtering.swift */,
+				BE9DCE589AAD19A32DD664703263817A /* FilterPreset.swift */,
+				20D3B7E1BFD2C8246320F2CFB5DBBD4A /* FilterSaturation.swift */,
+				A16E5E63A56205A3821111495EF6FD28 /* FilterShadows.swift */,
+				6AF14F62B85F8D851535BAAE77CB93E8 /* FilterSharpen.swift */,
+				F47929DEB45A23CC221863F97D845A36 /* FilterTemperature.swift */,
+				8288D9ABC4DEEFF9A4D292407A0BCE8C /* FilterUnsharpMask.swift */,
+				D9B2D8D4A479A9C345A796DFC96D6799 /* FilterVignette.swift */,
+				BDA419464247B0C8CEA1589E1C1BADA5 /* Geometry.swift */,
+				BD0BFC29C39A0F361571F09D75B10CC3 /* GraphicDrawing.swift */,
+				9F836B0C832F9DA32A06741FA0F6E76F /* ImageProvider.swift */,
+				E8A02F86C49207E7BB3E2D039A86B75E /* ImageRenderer.swift */,
+				FB3EB9FBCB8022CD242BA0DEB8C4EEA6 /* ImageSource.swift */,
+				36B09CB9E8E8382EDA12FAA725887AD1 /* ImageTool.swift */,
+				0D20ED08F748764594F8343F12A0223B /* InternalUtils.swift */,
+				1DC67658793F59418174D3CA49E40D15 /* Optional+.swift */,
+				00C989B957A67FD557853553BC606F00 /* Orientation.swift */,
+				7C1F36F20E1160D909BA0EF7810AA6C1 /* OvalBrush.swift */,
+				BDD95C41D68A8515C7490CAEBF19D1D9 /* ParameterRange.swift */,
+			);
+			name = Engine;
+			sourceTree = "<group>";
+		};
+		A9BC60268B5DF4BEEF7D4F636EA15F04 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C12CCB6A0670C1FAB133B5D96470C2CF /* Media.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B90975DC111CED41A2A50427F4501D6A /* Brightroom */ = {
+			isa = PBXGroup;
+			children = (
+				A5423375AEE06AB244DD18A8B448165F /* Engine */,
+				788E1F76A50BF854586A4E489026B647 /* Support Files */,
+				6BF3568F41E91348AB3662C973532D2C /* UI-Classic */,
+				84CFAA009A16628D9012F65AD26A395F /* UI-Crop */,
+			);
+			name = Brightroom;
+			path = Brightroom;
+			sourceTree = "<group>";
+		};
+		BB387541193F108B4975FCBC247536BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD920FA73FFF1388A5CC873D883B3C5E /* Brightroom.framework */,
+				198230653A0C22B6FDE9D238F97372E9 /* BrightroomUI.bundle */,
+				EE01016072E90F87F4FB34D7664034F8 /* BrightroomUI.bundle */,
+				EDCD0F76C70E68304B5F017B0C2BBF88 /* Pods_WhiteAndFlurryTest.framework */,
+				6DC7DEA16C1454419E1ACF9B0F51AAA3 /* TransitionPatch.framework */,
+				C487A4E573567BA52464B9A2ED21DBD9 /* Verge.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF1765E06D9BA8824CC1E2C5A2DD91D1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				22B2925086B11B3FF247B65B8E2C4C20 /* CoreImage.framework */,
+				5E977EDC1B0772D75B3A4957ADF5B95F /* Foundation.framework */,
+				D2A59F5CF89C1D4DA09654FD7A1EAC11 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C6F52C2FC1FE93F6E7BC34CB4C6E3189 /* TransitionPatch */ = {
+			isa = PBXGroup;
+			children = (
+				A059B6E8838D6635FF01126E92AD53CD /* Source.swift */,
+				86CD9D678D426DDB8D2163A6BA014CDF /* Support Files */,
+			);
+			name = TransitionPatch;
+			path = TransitionPatch;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				7B30164FAA27781E699B71B23B84EA12 /* Frameworks */,
+				5CA491F0F4CC9164B4715B9C68A23173 /* Pods */,
+				BB387541193F108B4975FCBC247536BD /* Products */,
+				350EE4BD7AAEBA268ED4D23C2AE47EBD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		FC82E137FE52CA0548870F5D746D9888 /* Pods-WhiteAndFlurryTest */ = {
+			isa = PBXGroup;
+			children = (
+				365D425460B3368F27EFCEA9C09E1B1A /* Pods-WhiteAndFlurryTest.modulemap */,
+				E11A30281B9823E5C83EA8210BAA9927 /* Pods-WhiteAndFlurryTest-acknowledgements.markdown */,
+				13F761159360379AEB2BCC2D1D8F3DB9 /* Pods-WhiteAndFlurryTest-acknowledgements.plist */,
+				F66EBB0BDB56A81758D80F55D181E888 /* Pods-WhiteAndFlurryTest-dummy.m */,
+				1A4FA781781E1F8A81F47C7252B9EBCD /* Pods-WhiteAndFlurryTest-frameworks.sh */,
+				F99896BBDE5BEF5AE010460FDE7FAAFD /* Pods-WhiteAndFlurryTest-Info.plist */,
+				AC5CE289FE193FB8FFA54E92875067E5 /* Pods-WhiteAndFlurryTest-umbrella.h */,
+				A0FC9FB20772565CB0695587262C869E /* Pods-WhiteAndFlurryTest.debug.xcconfig */,
+				1E46CFFF988F8936D366BC4F145D0D54 /* Pods-WhiteAndFlurryTest.release.xcconfig */,
+			);
+			name = "Pods-WhiteAndFlurryTest";
+			path = "Target Support Files/Pods-WhiteAndFlurryTest";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		09C330986E7C908C6FABC435B419226E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04141D3C20EA5F75EBD9E01ED72A5C92 /* Brightroom-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4545AF7D201021D7E427AE260EC68043 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDAA824EBA58B3E8E43798BE467A2D91 /* TransitionPatch-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBB1B7D1B5227F7A7C05D465D857358 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F045D5F34118ACCAFABBEE9B25BDA5C /* AtomicBridges.h in Headers */,
+				73268ADF71AB24BFA5CD4F9707717B4C /* Verge-umbrella.h in Headers */,
+				3EE23D328B3291935E16AE9379158225 /* VergeObjcBridge.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3CAFF766D552E60A74BD591152094ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AEED126BDE87C6C71916653EC3E999 /* Pods-WhiteAndFlurryTest-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		12F20EF6987B1381C5A860555633C350 /* Brightroom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7752698875DC7FFD350D50702AE2CD2 /* Build configuration list for PBXNativeTarget "Brightroom" */;
+			buildPhases = (
+				09C330986E7C908C6FABC435B419226E /* Headers */,
+				E38487CE5973470AC942B5D10ACF9F63 /* Sources */,
+				0FA5E6BE34E6BCEFA5AFFC028B5F1C38 /* Frameworks */,
+				844C868763910F6C4B2868EBB7F5B030 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4DA7E8B21FCB82215218303300A4470 /* PBXTargetDependency */,
+				BE392CA5522C74C5F9FA22E9D69B28E3 /* PBXTargetDependency */,
+				9AFDA38FA3255765DC732465E283C1F1 /* PBXTargetDependency */,
+				5B14B6D91C2D63D1C2C54D2E44531095 /* PBXTargetDependency */,
+			);
+			name = Brightroom;
+			productName = Brightroom;
+			productReference = DD920FA73FFF1388A5CC873D883B3C5E /* Brightroom.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		238548B352CC1C9E1E3E8C632A9E418F /* Pods-WhiteAndFlurryTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A47691D712C3F4849DF3A65702871F84 /* Build configuration list for PBXNativeTarget "Pods-WhiteAndFlurryTest" */;
+			buildPhases = (
+				B3CAFF766D552E60A74BD591152094ED /* Headers */,
+				31B3845C5C5A14C8D6CAEBDA996A7DB3 /* Sources */,
+				C06E8D5F49148EDAFBBE30312D0A629F /* Frameworks */,
+				3E73B767AB369D4223D54015D251F803 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10705EF4A6E182DA9470323C3ED90718 /* PBXTargetDependency */,
+				705976546861B1BE98383C795D4C7779 /* PBXTargetDependency */,
+				1E17ECB57A0F220E5B47BAC12A961930 /* PBXTargetDependency */,
+			);
+			name = "Pods-WhiteAndFlurryTest";
+			productName = "Pods-WhiteAndFlurryTest";
+			productReference = EDCD0F76C70E68304B5F017B0C2BBF88 /* Pods_WhiteAndFlurryTest.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		498C215DC480DFEE11123A6C3D30E884 /* Brightroom-BrightroomUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BD493BF218E20C831B1597D280AC3FE /* Build configuration list for PBXNativeTarget "Brightroom-BrightroomUI" */;
+			buildPhases = (
+				9B9ABEDE6479BB1A24AE18F8EC4C7E23 /* Sources */,
+				D58C86E9F96A00625AB2CE218CDE6749 /* Frameworks */,
+				75D85DC2BB43A36C4EE8F84C4D4AD014 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Brightroom-BrightroomUI";
+			productName = "Brightroom-BrightroomUI";
+			productReference = EE01016072E90F87F4FB34D7664034F8 /* BrightroomUI.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		74B462085E35CA2929210D22C2FADEE7 /* Verge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9B9767475A9B4796440E7E61F740E56 /* Build configuration list for PBXNativeTarget "Verge" */;
+			buildPhases = (
+				ACBB1B7D1B5227F7A7C05D465D857358 /* Headers */,
+				4383B4739E54DBA6B6F31AF48F9BBCAF /* Sources */,
+				C1437544D4529A9432FFE9B1CCD4DA0B /* Frameworks */,
+				E511BB30F285782F100239EA62C17F8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Verge;
+			productName = Verge;
+			productReference = C487A4E573567BA52464B9A2ED21DBD9 /* Verge.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7A9A58D570F0F84EC44791799CC961D2 /* TransitionPatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD3ED3D635B4A5C3168D7C5C7CCDEAB5 /* Build configuration list for PBXNativeTarget "TransitionPatch" */;
+			buildPhases = (
+				4545AF7D201021D7E427AE260EC68043 /* Headers */,
+				2B09E09A567AE226C7DEA5D9031AAB2E /* Sources */,
+				D518C122B4ABB3A63954826268A0CCB3 /* Frameworks */,
+				F88A9D9B56471DF2BC6A433760EAC9D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransitionPatch;
+			productName = TransitionPatch;
+			productReference = 6DC7DEA16C1454419E1ACF9B0F51AAA3 /* TransitionPatch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = BB387541193F108B4975FCBC247536BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12F20EF6987B1381C5A860555633C350 /* Brightroom */,
+				498C215DC480DFEE11123A6C3D30E884 /* Brightroom-BrightroomUI */,
+				498C215DC480DFEE11123A6C3D30E884 /* Brightroom-BrightroomUI */,
+				238548B352CC1C9E1E3E8C632A9E418F /* Pods-WhiteAndFlurryTest */,
+				7A9A58D570F0F84EC44791799CC961D2 /* TransitionPatch */,
+				74B462085E35CA2929210D22C2FADEE7 /* Verge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E73B767AB369D4223D54015D251F803 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C7ACF838A36315DA407BDC44ED26D00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5243FE2587210CD456F68484C89DD6 /* Media.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75D85DC2BB43A36C4EE8F84C4D4AD014 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2D08BCBDB05DC9A6214FF45B8DB2058 /* Media.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844C868763910F6C4B2868EBB7F5B030 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3934647B08762DF05A14AA44176948C7 /* BrightroomUI.bundle in Resources */,
+				3934647B08762DF05A14AA44176948C7 /* BrightroomUI.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E511BB30F285782F100239EA62C17F8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F88A9D9B56471DF2BC6A433760EAC9D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B09E09A567AE226C7DEA5D9031AAB2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966F454CF7F7968E940AA5FFACD559BF /* Source.swift in Sources */,
+				EA57DFE6628B1BD7D6BD0F07F5C3B2A5 /* TransitionPatch-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31B3845C5C5A14C8D6CAEBDA996A7DB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B3044CD3FF2BE0EA5A93D3EED12A912 /* Pods-WhiteAndFlurryTest-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4383B4739E54DBA6B6F31AF48F9BBCAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FFBC0FC9036E4F624AC0C6047DF6BCF /* _COWFragment.swift in Sources */,
+				DAC5E1951579315C6FFCDBBC3A598259 /* _StateTypeContainer.swift in Sources */,
+				13766F5570424205C0E1E952F2D10F95 /* _VergeObservableObjectBase.swift in Sources */,
+				AE6C431CA0E86D782D25D5827FF262F5 /* ActivityTrace.swift in Sources */,
+				186DC076F272642092EF42CAD3895B5A /* AtomicBridges.m in Sources */,
+				5F0465B7642EF76366721439070A4400 /* BackgroundDeallocationQueue.swift in Sources */,
+				987DFAF2A71FAE5D6FDC6CDFCE980D46 /* BatchCommit.swift in Sources */,
+				43B7A09E3590AE90E0C616D97DDDBAE3 /* CachedMap.swift in Sources */,
+				198E34E16F48C0BEEC8D50ECA5ACF99B /* Changes+Deprecated.swift in Sources */,
+				72A875F29335CA12FD5730905B49DEF2 /* Changes.swift in Sources */,
+				401D8C9B7D054D93FF118BB6123DD9FD /* Comparer.swift in Sources */,
+				D09AB024D8FE9B012D23749E046AFE8F /* DefaultStoreLogger.swift in Sources */,
+				F735F5BE6CC7A28C58E477B13CDD0B5E /* Derived+Assign.swift in Sources */,
+				8A97B28FE7163447ED78C2E1D827C33F /* Derived+Combine.swift in Sources */,
+				2CA93A799483FFD1F9D73C47797878EB /* Derived.swift in Sources */,
+				4B9109E2C4617ED1671B4DF4C9A3FE68 /* DetachedDispatcher.swift in Sources */,
+				4C9C8819D41BA7FEDD5252CDEA047AC1 /* DispatcherBase.swift in Sources */,
+				CACB8A9617664E4D347FC505902BDF1C /* DispatcherType.swift in Sources */,
+				A236E6DEA85135CD600D503FDB411430 /* Edge.swift in Sources */,
+				FB689A9E4DA44E4AE50562FABB849807 /* EventEmitter.swift in Sources */,
+				C3D34BCAF79FD7DDF13DAA2E60D7E5E4 /* Indexed.swift in Sources */,
+				D17E83DA24EEAE135E0B231738C81746 /* InoutRef.swift in Sources */,
+				54905B95C5D9897A576A6843A10DF654 /* Log.swift in Sources */,
+				A163B3649C8B9D98EDCB5EE209B17DDE /* MutationTrace.swift in Sources */,
+				37098D06086B45276C00CB79EB717975 /* NonAtomicVersionCounter.swift in Sources */,
+				C77542A49797A2CF240F9965A1357EB9 /* Pipeline.swift in Sources */,
+				DF3B88F9C8616CA14F7D0D78E586DE3E /* RuntimeError.swift in Sources */,
+				FE2FCD4372C7D66E177442A3308233FF /* RuntimeSanitizer.swift in Sources */,
+				8CE493316162D7C4593DAB6B5279B339 /* Scan.swift in Sources */,
+				F657EDCB373D4DC2F0EA87644DCFC5DA /* Signpost.swift in Sources */,
+				9D905233A14223B2F0A20DADC41700C0 /* StateReader.swift in Sources */,
+				ACDDE2C1AA636605EFADDF00D4B10A67 /* StateType.swift in Sources */,
+				E5203146DE11391BED8FFB15ACA667F8 /* Storage.swift in Sources */,
+				4D881155F9B6B0D07C9D61740421D928 /* Store+Combine.swift in Sources */,
+				A4D467684DFC1074821A22BC3C5E3C75 /* Store.swift in Sources */,
+				5855A622A30BAC739A6ACC5907C5BF8E /* StoreLogger.swift in Sources */,
+				9919218026CA84ECEFCA7BF0AC39711C /* StoreMiddleware.swift in Sources */,
+				B2743B2216F05627DAB016C81034E32C /* StoreType+Assignee.swift in Sources */,
+				FEACB6A7DBD9A1F3BFA98FB784992054 /* StoreType+BindingDerived.swift in Sources */,
+				A51653B9467B7BACC3B4A0633CA89C65 /* StoreType+Derived.swift in Sources */,
+				43B5C5067F06EBAB2CBE02AC6881C1CC /* StoreType+SwiftUI.swift in Sources */,
+				88D7287A7FB9B0189C6DD438B17DF9DD /* StoreWrapperType.swift in Sources */,
+				B2763CCB18A3D2F48F48CB33E2FB4036 /* TargetQueue.swift in Sources */,
+				AE0885230267B10E3BE84A457F10A75D /* UIStateStore.swift in Sources */,
+				6A2F507C2894184294CDD17FB66C4D68 /* Verge-dummy.m in Sources */,
+				7FE3C8D6F4D34A8D93F1FCC981FF7A59 /* VergeAnyCancellable.swift in Sources */,
+				08DA4FA062DE3B09307CBDD498FF2A93 /* VergeConcurrency+AtomicInt.swift in Sources */,
+				017F8996A1B394A671EF385F495F85EB /* VergeConcurrency+AtomicReference.swift in Sources */,
+				7F430539F0D3618EFAE4EA734A7FA562 /* VergeConcurrency+SynchronizationTracker.swift in Sources */,
+				D265880320A67617432A59777F47BCFB /* VergeConcurrency.swift in Sources */,
+				23DF38B58ED1B68E562DE37F40522FFF /* ViewModelBase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B9ABEDE6479BB1A24AE18F8EC4C7E23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB42BEF0DD0EDB63C3B644BEA6A51D40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E38487CE5973470AC942B5D10ACF9F63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C4CA5D0CF35E676FC0C8B3F6B9CE7FA /* _BrightroomDebounce.swift in Sources */,
+				8D815E5DD376B5D71686B1803E7887E1 /* _ImageView.swift in Sources */,
+				28498E8F776D08138C3518464CBB9329 /* AutoLayout.swift in Sources */,
+				F7F78508E0839E529F4D479A2D402178 /* BlurredMask.swift in Sources */,
+				FBC5292CF4F77DE9E2B01C7B44D57B86 /* BlurryMaskingView.swift in Sources */,
+				9B79E6A19E9DD277C7E0D18E847A38F6 /* Brightroom-dummy.m in Sources */,
+				E693AE71DB263D83644DBB5E256A68F8 /* BrightroomEngine.swift in Sources */,
+				29D923BEF80FD2744A054E0636952B90 /* BrightroomUI.swift in Sources */,
+				2C8137E13A826D529A24EF97BA26EA6D /* CanvasView.swift in Sources */,
+				BCA1A7E4630778C82DE2DAAE80B50AF6 /* CIImage+.swift in Sources */,
+				6145AA2EF3E5C178CCF4D865C515F124 /* CIImageDisplaying.swift in Sources */,
+				6D26ED4EBD44498980A9D831E59DA7F3 /* ClassicImageEditClarityControl.swift in Sources */,
+				DBBA0E26473CFC1AD0B8B12975A02C88 /* ClassicImageEditContrastControl.swift in Sources */,
+				86BC45F3C914B8749BD1F3538C493F2A /* ClassicImageEditControlStackView.swift in Sources */,
+				626B8D6524D2BB8496452CD6957A1256 /* ClassicImageEditControlViewBase.swift in Sources */,
+				855140D4DA391FA6F5DAFC8396B59A90 /* ClassicImageEditCropControl.swift in Sources */,
+				FBD3A8C3D4664BE7790DA830843E986B /* ClassicImageEditDoodleControlView.swift in Sources */,
+				A521E7FE52403E86C25E0071C8B001BD /* ClassicImageEditEditMenuControlView.swift in Sources */,
+				34C42876841A991EC2D25E7AFC404167 /* ClassicImageEditExposureControl.swift in Sources */,
+				0AAD9B2EE709D6D814528F796819E221 /* ClassicImageEditFadeControl.swift in Sources */,
+				5EE8B77672597DB584349CC505B3585C /* ClassicImageEditFilterControlBase.swift in Sources */,
+				B3B2BD7B6010EC5947D203900A4BE0F7 /* ClassicImageEditGaussianBlurControl.swift in Sources */,
+				D168372BF30BA69AAC59B8CDA2740670 /* ClassicImageEditHighlightsControl.swift in Sources */,
+				02735765292EEF7C7377C116CBC4BD1A /* ClassicImageEditMaskControlView.swift in Sources */,
+				64C6B23DBF100FE5D6E279E179EF790E /* ClassicImageEditNavigationView.swift in Sources */,
+				0B298E1D938888FAD87E9CE2201671D4 /* ClassicImageEditOptions.swift in Sources */,
+				44EB110830E45C83FD4158E58F9441B9 /* ClassicImageEditPresetListControl.swift in Sources */,
+				138D0FA431ADB58F41D491B03BA66E13 /* ClassicImageEditRootControlView.swift in Sources */,
+				5D5F0BB6F694BB272F1125928A96EE0B /* ClassicImageEditSaturationControl.swift in Sources */,
+				0470A0501C6E4B8E121F0DE55C25E4C5 /* ClassicImageEditShadowsControl.swift in Sources */,
+				F2CF6389402E8712276B3B85E8E2B077 /* ClassicImageEditSharpenControl.swift in Sources */,
+				BF0A03FD5791F9946E3A73616E081CAD /* ClassicImageEditStepSlider.swift in Sources */,
+				716B0110119DFB488A33DA88ACC5D318 /* ClassicImageEditStyle.swift in Sources */,
+				191ED30DE014F026B4B854E490691D57 /* ClassicImageEditTemperatureControl.swift in Sources */,
+				014F7B5BE06276C0B61F80E2F9A52E09 /* ClassicImageEditViewController.swift in Sources */,
+				E123A31019AD2DE81D8DE74F8C7F0477 /* ClassicImageEditViewModel.swift in Sources */,
+				EB01C7EEE905318BA060D54C8EA39B44 /* ClassicImageEditVignetteControl.swift in Sources */,
+				916BDE8A2487226E12C92192BCD7AAB8 /* ColorCubeHelper.swift in Sources */,
+				1A9BFC468EF8CF90202F8A1C7FC9857D /* ColorCubeLoader.swift in Sources */,
+				316C3DD6744A638283A433FD6DD59106 /* ColorCubeStorage.swift in Sources */,
+				5140D628E883DFC22609DD63D4CB9C4B /* CoreGraphics+.swift in Sources */,
+				BB0F85713386D12A2974EB0C12A63B96 /* CoreImageInspector.swift in Sources */,
+				029F69F97639F567E8D55EFEE4DE5304 /* CropView._CropScrollView.swift in Sources */,
+				76331F8AA451D50ABD6219C59818B5A1 /* CropView._InteractiveCropGuideView.swift in Sources */,
+				7343F284288545B185703267AC347A9F /* CropView.CropInsideOverlay.swift in Sources */,
+				E239BE57A9843439AFE33AA18829A051 /* CropView.CropOutsideOverlay.swift in Sources */,
+				F81CCED5E31A1E0E8FADF7115B94BB8E /* CropView.swift in Sources */,
+				4A02072DF033375476976A407CF72685 /* DrawnPath.swift in Sources */,
+				88BC4251ACAFB2E63FB0A126D50A13C2 /* EditingCrop+.swift in Sources */,
+				920876FEC5E79E1A10B2BAA43D470ADF /* EditingCrop.swift in Sources */,
+				7851878B1EA7EF88827D5FC0A8364996 /* EditingStack.CropModifier.swift in Sources */,
+				7AE9E5CE993A16D6BEFABD4A1FAC78A4 /* EditingStack.Edit.swift in Sources */,
+				33F302E767987165B3618F42C7140B83 /* EditingStack.swift in Sources */,
+				773883423CD24FDFFF7BED2B814C587F /* EditorLog.swift in Sources */,
+				17AC28E4AC8BE883592A59D3C7DC8E57 /* EngineLog.swift in Sources */,
+				13C0FEA59795CDB696F998F2D3728C66 /* EngineSanitizer.swift in Sources */,
+				83DAD5B5625289C03220E7D62A25B926 /* FilterBrightness.swift in Sources */,
+				F9DD6C06960E8BD29F3B8B0B488486D5 /* FilterColorCube.swift in Sources */,
+				84744F25E9AD038400D299D05BAD5666 /* FilterContrast.swift in Sources */,
+				52F492A07B151166DE36BA29C938B7F8 /* FilterExposure.swift in Sources */,
+				86C70E1B6DD1F5E18BE1D695DA0E2E10 /* FilterFade.swift in Sources */,
+				6F35D148B26D619A33077F8639984D24 /* FilterGaussianBlur.swift in Sources */,
+				C844F873D2F93DF001E19EE07AEF32C0 /* FilterHighlights.swift in Sources */,
+				C5172E7480E626AA2391E07918ACC4E5 /* FilterHighlightShadowTint.swift in Sources */,
+				50C05277B2FA5A03DB46B118CF5F306D /* Filtering.swift in Sources */,
+				EBAA442EB32BC3BA7486848E1A68A7A8 /* FilterPreset.swift in Sources */,
+				8A2AD0AE08207100DE9E6FE9CA08D2F8 /* FilterSaturation.swift in Sources */,
+				F7E79B0D8006886634235E73B2FB4124 /* FilterShadows.swift in Sources */,
+				39FB84BB031D931855CBC6EAD89715A4 /* FilterSharpen.swift in Sources */,
+				981FDFCF40EE20F606E073CF0FE63D23 /* FilterTemperature.swift in Sources */,
+				CD665EB6A86951283BCF1FCFF757BE1F /* FilterUnsharpMask.swift in Sources */,
+				B9BCF65C132EB845E8139A1E11C5B094 /* FilterVignette.swift in Sources */,
+				303F5C66814D96C519F7EBDE155CCA63 /* Geometry.swift in Sources */,
+				363F1C678747B8E88B9DFA73F28B682A /* GraphicDrawing.swift in Sources */,
+				9643BFD04B62DBFEDF5B0DE5C5A377B9 /* ImagePreviewView.swift in Sources */,
+				01C66D7903B14FD7AA7D18C40ACCFF47 /* ImageProvider.swift in Sources */,
+				8283E41354ABA13EA6CE5862F40609F3 /* ImageRenderer.swift in Sources */,
+				13293E43F2948F454BD902A8D982A7EC /* ImageSource.swift in Sources */,
+				6BA43B17F3B39A47A312BADFB3A0CACB /* ImageTool.swift in Sources */,
+				7962AF63898FE3F0DFBCBC0D7F0B26E6 /* InternalUtils.swift in Sources */,
+				14AC9AD3A639494AA08EF6AA775EBE99 /* LoadingBlurryOverlayView.swift in Sources */,
+				97167041C0195F05946AB5212E8D833F /* MetalImageView.swift in Sources */,
+				B9AA96999669FB78E3857FC05556CB63 /* Optional+.swift in Sources */,
+				DE647604974BF044F18B3B596DBC45DA /* Orientation.swift in Sources */,
+				CD2AA5A1F5A48ACC19E4F55698CFC3F2 /* OvalBrush.swift in Sources */,
+				2D48D3AA3334D58D56D0A1CCB3C48B27 /* ParameterRange.swift in Sources */,
+				A17F409DA3D5B4E73EFD144D27DBCBBD /* PhotosCropAspectRatioControl.swift in Sources */,
+				3407EC27531932EAA208769491CE1017 /* PhotosCropViewController.swift in Sources */,
+				A1B94E79AEABFD18309D7ECB9B32E841 /* PixelEditorCodeBasedView.swift in Sources */,
+				EF6BD013740DD2E0FC83909A997A25C5 /* SmoothPathDrawingView.swift in Sources */,
+				030496AB009ED574774E5341A4B38853 /* SwiftUICropView.swift in Sources */,
+				843F2D536BC3C391FE15E4370760A985 /* SwiftUIPhotosCropView.swift in Sources */,
+				A66F9D3C2FEA388DA8E2DAB10907BF08 /* TempCode.swift in Sources */,
+				A45FEA2CAA7A8746E217D050E1DB77CF /* UIButton+Closure.swift in Sources */,
+				C7A694DFF0D6DC463C0AC5899AE4DF56 /* UIStateStore.swift in Sources */,
+				88DD2D1AB2E2C3A33249255D8FD7C371 /* Wrap.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10705EF4A6E182DA9470323C3ED90718 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Brightroom;
+			target = 12F20EF6987B1381C5A860555633C350 /* Brightroom */;
+			targetProxy = 6C37B396168E562E1B3E83926FE5426C /* PBXContainerItemProxy */;
+		};
+		1E17ECB57A0F220E5B47BAC12A961930 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Verge;
+			target = 74B462085E35CA2929210D22C2FADEE7 /* Verge */;
+			targetProxy = 51ED898AB3E1813E951CF3D64EC81FF9 /* PBXContainerItemProxy */;
+		};
+		5B14B6D91C2D63D1C2C54D2E44531095 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Verge;
+			target = 74B462085E35CA2929210D22C2FADEE7 /* Verge */;
+			targetProxy = 66B56B2FDE38E91CE0631F44F8A9636F /* PBXContainerItemProxy */;
+		};
+		705976546861B1BE98383C795D4C7779 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TransitionPatch;
+			target = 7A9A58D570F0F84EC44791799CC961D2 /* TransitionPatch */;
+			targetProxy = 173AF43D902739A17A008BE00CEFD70B /* PBXContainerItemProxy */;
+		};
+		9AFDA38FA3255765DC732465E283C1F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TransitionPatch;
+			target = 7A9A58D570F0F84EC44791799CC961D2 /* TransitionPatch */;
+			targetProxy = 68ED26A26F58D05BCEF0A9251DF1B01B /* PBXContainerItemProxy */;
+		};
+		BE392CA5522C74C5F9FA22E9D69B28E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Brightroom-BrightroomUI";
+			target = 498C215DC480DFEE11123A6C3D30E884 /* Brightroom-BrightroomUI */;
+			targetProxy = 16AA30F45F47D98FDF4ABF68A608FC0D /* PBXContainerItemProxy */;
+		};
+		E4DA7E8B21FCB82215218303300A4470 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Brightroom-BrightroomUI";
+			target = 498C215DC480DFEE11123A6C3D30E884 /* Brightroom-BrightroomUI */;
+			targetProxy = 346174C5F03C8195919536C09572B8C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		137C1AF3EE593700D1C38F2923EE5B61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFD638A6FD1BDE17756146E783878677 /* Brightroom.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Brightroom";
+				IBSC_MODULE = Brightroom;
+				INFOPLIST_FILE = "Target Support Files/Brightroom/ResourceBundle-BrightroomUI-Brightroom-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = BrightroomUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		3643DDA4DC7D069A14F411A3C6919043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C728B4351FC2F8683E4D9361E827DB28 /* Verge.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Verge/Verge-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Verge/Verge-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Verge/Verge.modulemap";
+				PRODUCT_MODULE_NAME = Verge;
+				PRODUCT_NAME = Verge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3CC10CF4BEE994B0F883CE7B3BE046E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFD638A6FD1BDE17756146E783878677 /* Brightroom.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Brightroom";
+				IBSC_MODULE = Brightroom;
+				INFOPLIST_FILE = "Target Support Files/Brightroom/ResourceBundle-BrightroomUI-Brightroom-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = BrightroomUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		3E1E117E8084CBE778E5B37980FD5E30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFD638A6FD1BDE17756146E783878677 /* Brightroom.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Brightroom/Brightroom-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Brightroom/Brightroom-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Brightroom/Brightroom.modulemap";
+				PRODUCT_MODULE_NAME = Brightroom;
+				PRODUCT_NAME = Brightroom;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		41330BE39B082FAD032C97BBD5ED81C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5DDC3A7A5527035C25DACC4B8F92E81 /* Brightroom.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Brightroom/Brightroom-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Brightroom/Brightroom-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Brightroom/Brightroom.modulemap";
+				PRODUCT_MODULE_NAME = Brightroom;
+				PRODUCT_NAME = Brightroom;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4214E6946993DF02ED98D89047C64016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		49D632906BCC47808E44522BC5E53C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5DDC3A7A5527035C25DACC4B8F92E81 /* Brightroom.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Brightroom";
+				IBSC_MODULE = Brightroom;
+				INFOPLIST_FILE = "Target Support Files/Brightroom/ResourceBundle-BrightroomUI-Brightroom-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = BrightroomUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		726BD425F2B37CA6EA34C60A1C325DEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D5FEF09433A5772293D740AB0BF69CA /* TransitionPatch.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TransitionPatch/TransitionPatch-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TransitionPatch/TransitionPatch-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TransitionPatch/TransitionPatch.modulemap";
+				PRODUCT_MODULE_NAME = TransitionPatch;
+				PRODUCT_NAME = TransitionPatch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A579C0C2A7952E264DA1E248350E35D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5DDC3A7A5527035C25DACC4B8F92E81 /* Brightroom.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Brightroom";
+				IBSC_MODULE = Brightroom;
+				INFOPLIST_FILE = "Target Support Files/Brightroom/ResourceBundle-BrightroomUI-Brightroom-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = BrightroomUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		C1A66B9F252483E9FF5B6B1A9E0277CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0FC9FB20772565CB0695587262C869E /* Pods-WhiteAndFlurryTest.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WhiteAndFlurryTest/Pods-WhiteAndFlurryTest-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WhiteAndFlurryTest/Pods-WhiteAndFlurryTest.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CD85FD90473CFBE797E4264E7BBC70AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		DAFD0ED8194F0E3E05A4912C0AE59706 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60C402DB3EA463BA8D1CA4B4C51BB864 /* Verge.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Verge/Verge-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Verge/Verge-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Verge/Verge.modulemap";
+				PRODUCT_MODULE_NAME = Verge;
+				PRODUCT_NAME = Verge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E2E3D172895B3CC0872C5E05607FDF58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99DBB9908C213844D58D2315AB6C23A7 /* TransitionPatch.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TransitionPatch/TransitionPatch-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TransitionPatch/TransitionPatch-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TransitionPatch/TransitionPatch.modulemap";
+				PRODUCT_MODULE_NAME = TransitionPatch;
+				PRODUCT_NAME = TransitionPatch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB27ECD40E6BDF849446CC17C85FD19E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E46CFFF988F8936D366BC4F145D0D54 /* Pods-WhiteAndFlurryTest.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WhiteAndFlurryTest/Pods-WhiteAndFlurryTest-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WhiteAndFlurryTest/Pods-WhiteAndFlurryTest.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4214E6946993DF02ED98D89047C64016 /* Debug */,
+				CD85FD90473CFBE797E4264E7BBC70AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BD493BF218E20C831B1597D280AC3FE /* Build configuration list for PBXNativeTarget "Brightroom-BrightroomUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CC10CF4BEE994B0F883CE7B3BE046E3 /* Debug */,
+				49D632906BCC47808E44522BC5E53C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		742DDCCCCDECF0F2D1BBA0D9244A0C7C /* Build configuration list for PBXNativeTarget "Brightroom-BrightroomUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				137C1AF3EE593700D1C38F2923EE5B61 /* Debug */,
+				A579C0C2A7952E264DA1E248350E35D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A47691D712C3F4849DF3A65702871F84 /* Build configuration list for PBXNativeTarget "Pods-WhiteAndFlurryTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1A66B9F252483E9FF5B6B1A9E0277CA /* Debug */,
+				FB27ECD40E6BDF849446CC17C85FD19E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9B9767475A9B4796440E7E61F740E56 /* Build configuration list for PBXNativeTarget "Verge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAFD0ED8194F0E3E05A4912C0AE59706 /* Debug */,
+				3643DDA4DC7D069A14F411A3C6919043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD3ED3D635B4A5C3168D7C5C7CCDEAB5 /* Build configuration list for PBXNativeTarget "TransitionPatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E3D172895B3CC0872C5E05607FDF58 /* Debug */,
+				726BD425F2B37CA6EA34C60A1C325DEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7752698875DC7FFD350D50702AE2CD2 /* Build configuration list for PBXNativeTarget "Brightroom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E1E117E8084CBE778E5B37980FD5E30 /* Debug */,
+				41330BE39B082FAD032C97BBD5ED81C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

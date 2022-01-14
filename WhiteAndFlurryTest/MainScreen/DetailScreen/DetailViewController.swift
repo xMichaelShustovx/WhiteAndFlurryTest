@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import Brightroom
 
 protocol DetailViewControllerProtocol {
     func starButtonTapped()
@@ -69,6 +70,7 @@ class DetailViewController: UIViewController {
     
     private func setupUI() {
         
+        // Check if image is in CoreData or in cache and set it
         if let imageData = self.photo.imageData {
             self.detailView.photoImage.image = UIImage(data: imageData)
         }
@@ -77,6 +79,7 @@ class DetailViewController: UIViewController {
         }
         self.detailView.nameLabel.text = "Autor: \(self.photo.user.name)"
         
+        // Set labels of detailed view
         let dateString = self.photo.created_at
         let formattedDate = dateString[..<dateString.firstIndex(of: "T")!].replacingOccurrences(of: "-", with: "/")
         self.detailView.dateLabel.text = "Date: \(formattedDate)"
@@ -84,7 +87,7 @@ class DetailViewController: UIViewController {
         self.detailView.locationLabel.text = "Location: \(self.photo.location?.name ?? "Unknown")"
         self.detailView.downloadsLabel.text = "Downloads: \(String(self.photo.downloads ?? 0))"
         
-        
+        // Check if there is location and downloads and ask model to get data if not
         if self.photo.location?.name == nil || self.photo.downloads == nil {
             
             PhotosModel.shared.getPhotoDetailed(id: self.photo.id)
@@ -93,19 +96,18 @@ class DetailViewController: UIViewController {
             self.detailView.starButton.isUserInteractionEnabled = true
         }
         
-        
+        // Set action for star button
         self.detailView.starButton.addAction(UIAction(handler: { _ in
             self.starredHandle()
         }), for: .touchUpInside)
+        
+        // Set action for crop button
+        self.detailView.cropButton.addTarget(self, action: #selector(press), for: .touchUpInside)
     }
     
     private func starredHandle() {
         
         if isStarred {
-            
-//            DispatchQueue.main.async {
-//                self.detailView.starButton.setImage(UIImage(systemName: "star"), for: .normal)
-//            }
             
             // Delete from Core Data
             let fetchRequest = StarredPhoto.fetchRequest()
@@ -119,10 +121,6 @@ class DetailViewController: UIViewController {
             self.isStarred.toggle()
         }
         else {
-            
-//            DispatchQueue.main.async {
-//                self.detailView.starButton.setImage(UIImage(systemName: "star.fill"), for: .normal)
-//            }
             
             // Add to Core Data
             let photo = StarredPhoto(context: self.context)
@@ -148,6 +146,19 @@ class DetailViewController: UIViewController {
         }
         
         self.delegate?.starButtonTapped()
+    }
+    
+    // MARK: - Brightroom Methods
+    @objc
+    private func press() {
+        
+        let image = self.detailView.photoImage.image
+        let imageProvider = ImageProvider(image: image ?? UIImage())
+        let controller = PhotosCropViewController(imageProvider: imageProvider)
+        controller.handlers.didCancel = { controller in
+            controller.dismiss(animated: true, completion: nil)
+        }
+        present(controller, animated: true, completion: nil)
     }
 }
 
@@ -189,10 +200,6 @@ extension DetailViewController: PhotosModelProtocol {
                 
                 self.isStarred = true
                 
-//                DispatchQueue.main.async {
-//
-//                    self.detailView.starButton.setImage(UIImage(systemName: "star.fill"), for: .normal)
-//                }
             }
         }
         catch {
